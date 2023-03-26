@@ -13,7 +13,11 @@ const execute = async () => {
     tools
       .filter((tool) => !fs.existsSync("public".concat(tool.thumbnail)))
       .map((tool) => {
-        captureWebsite.file(tool.url, "public".concat(tool.thumbnail));
+        captureWebsite.file(tool.url, "public".concat(tool.thumbnail), {
+          launchOptions: {
+            args: ["--no-sandbox", "--disable-setuid-sandbox"],
+          },
+        });
       }),
   ]);
 };
