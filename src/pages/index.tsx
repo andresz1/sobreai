@@ -12,17 +12,18 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import { LayoutHeader } from "@/components/Layout/LayoutHeader";
 import { LayoutMain } from "@/components/Layout/LayoutMain";
+import { CreateToolButton } from "@/components/Tool/CreateToolButton";
 import { ToolCard } from "@/components/Tool/ToolCard";
 import { createExtractors } from "@/extractors";
 
-const Index = ({ tools }) => {
-  const { t } = useTranslation(["home"]);
+const IndexPage = ({ tools }) => {
+  const { t } = useTranslation(["index"]);
 
   return (
     <>
       <LayoutHeader />
       <LayoutMain>
-        <Stack my={24} align="center" spacing={8}>
+        <Stack py={36} align="center" spacing={8}>
           <Stack textAlign="center" spacing={0}>
             <Heading as="h1" fontSize={{ base: "4xl", md: "6xl" }}>
               {t("h1")}
@@ -32,9 +33,11 @@ const Index = ({ tools }) => {
             </Text>
           </Stack>
 
-          <ButtonGroup>
-            <Button>1</Button>
-            <Button>2</Button>
+          <ButtonGroup size="lg" spacing={4}>
+            <CreateToolButton>Agregar herramienta</CreateToolButton>
+            <Button colorScheme="gray" variant="outline">
+              Star on GitHub
+            </Button>
           </ButtonGroup>
         </Stack>
 
@@ -54,7 +57,7 @@ const Index = ({ tools }) => {
 };
 
 export async function getStaticProps({ locale }) {
-  const i18n = await serverSideTranslations(locale, ["common", "home"]);
+  const i18n = await serverSideTranslations(locale, ["common", "index"]);
   const extractors = createExtractors();
 
   const tools = await extractors.tools.fetchAll();
@@ -63,9 +66,8 @@ export async function getStaticProps({ locale }) {
     props: {
       ...i18n,
       tools,
-      // Will be passed to the page component as props
     },
   };
 }
 
-export default Index;
+export default IndexPage;

@@ -9,8 +9,6 @@ import { createExtractors } from "@/extractors";
 const ToolDetailPage = ({ tool }) => {
   const { t } = useTranslation(["common", "detail"]);
 
-  console.log(tool);
-
   return (
     <>
       <LayoutHeader />
