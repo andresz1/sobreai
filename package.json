@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "capture": "node ./scripts/capture.mjs",
+    "capture": "node node_modules/puppeteer/install.js && node ./scripts/capture.mjs",
     "postinstall": "npm run capture",
     "dev": "next",
     "build": "next build",
