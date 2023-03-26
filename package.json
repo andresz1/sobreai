@@ -1,11 +1,12 @@
 {
   "private": true,
   "scripts": {
+    "capture": "node ./scripts/capture.mjs",
+    "postinstall": "npm run capture",
     "dev": "next",
-    "build": "npm run capture && next build",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "capture": "node ./scripts/capture.mjs"
+    "lint": "next lint"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.2",
