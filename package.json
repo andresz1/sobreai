@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.2",
@@ -11,15 +12,25 @@
     "@chakra-ui/theme-tools": "^2.0.2",
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.9.0",
+    "capture-website": "^3.2.0",
+    "eslint-config-prettier": "^8.8.0",
     "framer-motion": "^6.3.0",
+    "i18next": "^22.4.13",
     "next": "latest",
+    "next-i18next": "^13.2.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-i18next": "^12.2.0",
+    "slugify": "^1.6.6"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "eslint": "8.36.0",
+    "eslint-config-next": "13.2.4",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "prettier": "^2.8.7",
     "typescript": "^4.7.2"
   }
 }
