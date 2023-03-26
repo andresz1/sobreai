@@ -26,5 +26,13 @@
   {
     "name": "clip.fm",
     "url": "https://www.clip.fm"
+  },
+  {
+    "name": "ingestai",
+    "url": "https://ingestai.io"
+  },
+  {
+    "name": "maimovie",
+    "url": "https://maimovie.com"
   }
 ]
