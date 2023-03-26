@@ -2,14 +2,14 @@ import captureWebsite from "capture-website";
 import fs from "fs";
 import path from "path";
 
-const execute = async () => {
+const execute = () => {
   const location = path.join(process.cwd(), "public/files/tools.json");
   const tools = JSON.parse(fs.readFileSync(location, "utf-8")).map((tool) => ({
     ...tool,
-    thumbnail: `/images/${tool.name}.png`,
+    thumbnail: `/images/captures/${tool.name}.png`,
   }));
 
-  await Promise.all([
+  return Promise.all([
     tools
       .filter((tool) => !fs.existsSync("public".concat(tool.thumbnail)))
       .map((tool) => {

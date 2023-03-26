@@ -1,4 +1,3 @@
-import captureWebsite from "capture-website";
 import fs from "fs";
 import path from "path";
 import slugify from "slugify";
@@ -14,18 +13,9 @@ export class ToolsExtractor {
       (tool) => ({
         ...tool,
         slug: slugify(tool.name),
-        thumbnail: `/images/${tool.name}.png`,
+        thumbnail: `/images/captures/${tool.name}.png`,
       })
     );
-
-    await Promise.all([
-      tools
-        .filter((tool) => !fs.existsSync("public".concat(tool.thumbnail)))
-        .map((tool) => {
-          console.log("generate");
-          captureWebsite.file(tool.url, "public".concat(tool.thumbnail));
-        }),
-    ]);
 
     return tools;
   }
