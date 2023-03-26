@@ -2,9 +2,10 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "next build",
+    "build": "npm run capture && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "capture": "node ./scripts/capture.mjs"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.2",
