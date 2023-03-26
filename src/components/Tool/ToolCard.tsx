@@ -22,6 +22,8 @@ export const ToolCard = ({ tool, ...others }: ToolCardProps) => {
       borderRadius="md"
       boxShadow="md"
       overflow="hidden"
+      transition="all .3s ease-in-out"
+      _hover={{ transform: "scale(1.02)" }}
       {...others}
     >
       <AspectRatio ratio={1280 / 800}>

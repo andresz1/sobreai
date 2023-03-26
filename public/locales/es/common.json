@@ -1,3 +1,5 @@
 {
-  "test": "test"
+  "footer": {
+    "copyright": "Copyright © todosobreia"
+  }
 }

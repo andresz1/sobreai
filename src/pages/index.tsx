@@ -10,8 +10,10 @@ import {
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
+import { LayoutFooter } from "@/components/Layout/LayoutFooter";
 import { LayoutHeader } from "@/components/Layout/LayoutHeader";
 import { LayoutMain } from "@/components/Layout/LayoutMain";
+import { RepositoryButton } from "@/components/Shared/RepositoryButton";
 import { CreateToolButton } from "@/components/Tool/CreateToolButton";
 import { ToolCard } from "@/components/Tool/ToolCard";
 import { createExtractors } from "@/extractors";
@@ -23,7 +25,7 @@ const IndexPage = ({ tools }) => {
     <>
       <LayoutHeader />
       <LayoutMain>
-        <Stack py={36} align="center" spacing={8}>
+        <Stack py={{ base: 20, md: 36 }} align="center" spacing={8}>
           <Stack textAlign="center" spacing={0}>
             <Heading as="h1" fontSize={{ base: "4xl", md: "6xl" }}>
               {t("h1")}
@@ -33,12 +35,13 @@ const IndexPage = ({ tools }) => {
             </Text>
           </Stack>
 
-          <ButtonGroup size="lg" spacing={4}>
-            <CreateToolButton>Agregar herramienta</CreateToolButton>
-            <Button colorScheme="gray" variant="outline">
+          <Stack spacing={4} direction={{ base: "column", md: "row" }}>
+            <CreateToolButton size="lg">Agregar herramienta</CreateToolButton>
+
+            <RepositoryButton size="lg" colorScheme="gray" variant="outline">
               Star on GitHub
-            </Button>
-          </ButtonGroup>
+            </RepositoryButton>
+          </Stack>
         </Stack>
 
         <Grid
@@ -52,6 +55,8 @@ const IndexPage = ({ tools }) => {
           ))}
         </Grid>
       </LayoutMain>
+
+      <LayoutFooter />
     </>
   );
 };

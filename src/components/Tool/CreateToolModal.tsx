@@ -44,7 +44,7 @@ export const CreateToolModal = ({
       <ModalOverlay />
 
       <ModalContent>
-        <ModalHeader>Modal Title</ModalHeader>
+        <ModalHeader>Agregar herramienta</ModalHeader>
         <ModalCloseButton />
         <ModalBody>
           <ToolForm id={formId} onSubmit={handleSubmit} />
@@ -52,15 +52,10 @@ export const CreateToolModal = ({
 
         <ModalFooter>
           <ButtonGroup>
-            <Button colorScheme="blue" onClick={onClose}>
-              Close
+            <Button variant="ghost" onClick={onClose}>
+              Cerrar
             </Button>
-            <Button
-              type="submit"
-              form={formId}
-              variant="ghost"
-              isLoading={isLoading}
-            >
+            <Button type="submit" form={formId} isLoading={isLoading}>
               Enviar
             </Button>
           </ButtonGroup>

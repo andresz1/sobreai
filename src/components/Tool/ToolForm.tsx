@@ -37,7 +37,7 @@ export const ToolForm = ({ onSubmit, ...others }) => {
   return (
     <Stack as="form" {...others} onSubmit={handleSubmit(onSubmit)}>
       <FormControl isInvalid={!!errors.url}>
-        <FormLabel>URL de la herramienta</FormLabel>
+        <FormLabel>URL</FormLabel>
         <Input
           type="text"
           placeholder="https://www.awesomeai.com"

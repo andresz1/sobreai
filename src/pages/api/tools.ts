@@ -10,8 +10,8 @@ router.post(async (req, res) => {
   const { url } = req.body;
 
   const { data } = await octokit.rest.issues.create({
-    owner: process.env.GITHUB_OWNER,
-    repo: process.env.GITHUB_REPO,
+    owner: process.env.NEXT_PUBLIC_GITHUB_OWNER,
+    repo: process.env.NEXT_PUBLIC_GITHUB_REPO,
     title: "Add a new tool",
     body: `Add the tool hosted in ${url}`,
   });
