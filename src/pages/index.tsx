@@ -24,8 +24,9 @@ const IndexPage = ({ tools }) => {
   return (
     <>
       <LayoutHeader />
+
       <LayoutMain>
-        <Stack py={{ base: 20, md: 36 }} align="center" spacing={8}>
+        <Stack py={{ base: 20, md: 28 }} align="center" spacing={8}>
           <Stack textAlign="center" spacing={0}>
             <Heading as="h1" fontSize={{ base: "4xl", md: "6xl" }}>
               {t("h1")}

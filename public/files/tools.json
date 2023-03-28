@@ -1,38 +1,47 @@
 [
   {
     "name": "milo",
-    "url": "https://www.joinmilo.com"
+    "url": "https://www.joinmilo.com",
+    "description": "Crea un chatbot a partir de ficheros markdown de forma sencilla"
   },
   {
     "name": "codium",
-    "url": "https://www.codium.ai"
+    "url": "https://www.codium.ai",
+    "description": "Crea un chatbot a partir de ficheros markdown de forma sencilla"
   },
   {
     "name": "autoregex",
-    "url": "https://www.autoregex.xyz"
+    "url": "https://www.autoregex.xyz",
+    "description": "Crea un chatbot a partir de ficheros markdown de forma sencilla"
   },
   {
     "name": "codesnippets",
-    "url": "https://codesnippets.ai"
+    "url": "https://codesnippets.ai",
+    "description": "Genera, refactoriza, debugea y documenta tus fragmentos de código con GPT3"
   },
   {
     "name": "markprompt",
-    "url": "https://markprompt.com"
+    "url": "https://markprompt.com",
+    "description": "Crea un chatbot a partir de ficheros markdown de forma sencilla"
   },
   {
     "name": "promptbase",
-    "url": "https://promptbase.com"
+    "url": "https://promptbase.com",
+    "description": "Crea un chatbot a partir de ficheros markdown de forma sencilla"
   },
   {
     "name": "clip.fm",
-    "url": "https://www.clip.fm"
+    "url": "https://www.clip.fm",
+    "description": "Crea un chatbot a partir de ficheros markdown de forma sencilla"
   },
   {
     "name": "ingestai",
-    "url": "https://ingestai.io"
+    "url": "https://ingestai.io",
+    "description": "Crea un chatbot a partir de ficheros markdown de forma sencilla"
   },
   {
     "name": "maimovie",
-    "url": "https://maimovie.com"
+    "url": "https://maimovie.com",
+    "description": "Crea un chatbot a partir de ficheros markdown de forma sencilla"
   }
 ]

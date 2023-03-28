@@ -15,27 +15,18 @@ const theme = extendTheme({
     heading: fonts.style.fontFamily,
     body: fonts.style.fontFamily,
   },
-  semanticTokens: {
-    colors: {
-      text: {
-        default: "#16161D",
-        _dark: "#ade3b8",
+  styles: {
+    global: {
+      "html, body": {
+        height: "100%",
       },
-      heroGradientStart: {
-        default: "#7928CA",
-        _dark: "#e3a7f9",
+      "#__next": {
+        height: "100%",
       },
-      heroGradientEnd: {
-        default: "#FF0080",
-        _dark: "#fbec8f",
-      },
-    },
-    radii: {
-      button: "12px",
     },
   },
-  colors: {
-    black: "#16161D",
+  config: {
+    cssVarPrefix: "ia",
   },
   breakpoints,
 });
