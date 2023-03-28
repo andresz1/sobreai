@@ -40,7 +40,12 @@ export const CreateToolModal = ({
   };
 
   return (
-    <Modal onClose={onClose} isCentered {...others}>
+    <Modal
+      onClose={onClose}
+      size={{ base: "full", md: "lg" }}
+      isCentered
+      {...others}
+    >
       <ModalOverlay />
 
       <ModalContent>

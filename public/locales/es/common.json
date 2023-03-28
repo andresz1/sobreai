@@ -1,4 +1,14 @@
 {
+  "share": {
+    "title": "Compartir",
+    "social": "Comparte el enlace con alguien",
+    "copy": "Copiar enlace",
+    "Facebook": "Compartir en Facebook",
+    "Twitter": "Compartir en Twitter",
+    "Whatsapp": "Compartir en Whatsapp",
+    "button_copy": "Copiar",
+    "button_copied": "Copiado"
+  },
   "footer": {
     "copyright": "Copyright © todosobreia"
   }

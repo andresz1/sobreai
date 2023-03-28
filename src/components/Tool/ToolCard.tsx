@@ -34,7 +34,7 @@ export const ToolCard = ({ tool, ...others }: ToolCardProps) => {
 
       <Stack as="footer" p={4}>
         <Heading as="h2" fontSize="2xl">
-          <Link href={`/herramientas/${tool.name}`} passHref legacyBehavior>
+          <Link href={`/herramientas/${tool.slug}`} passHref legacyBehavior>
             <LinkOverlay>{tool.name}</LinkOverlay>
           </Link>
         </Heading>

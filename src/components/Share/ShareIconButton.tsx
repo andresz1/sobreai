@@ -20,7 +20,9 @@ export const ShareIconButton = ({
 }: ShareIconButtonProps) => {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
-  const url = urlProp || `/${router.asPath}`;
+
+  const siteURL = process.env.NEXT_PUBLIC_SITE_URL;
+  const url = urlProp || siteURL.concat(router.asPath);
 
   const handleToggle = () => {
     setIsOpen((isOpen) => !isOpen);

@@ -16,7 +16,7 @@ export type ShareInputGroupProps = InputGroupProps & { value: string };
 const ShareInputGroup = ({ value, ...others }: ShareInputGroupProps) => {
   const { t } = useTranslation("common");
   const { hasCopied, onCopy } = useClipboard(value);
-  const width = "4.5rem";
+  const width = 20;
 
   return (
     <InputGroup {...others}>
@@ -24,10 +24,10 @@ const ShareInputGroup = ({ value, ...others }: ShareInputGroupProps) => {
         <Icon as={HiOutlineDuplicate} />
       </InputLeftElement>
 
-      <Input paddingRight={width} value={value} isReadOnly />
+      <Input pr={width} value={value} isReadOnly />
 
       <InputRightElement width={width}>
-        <Button colorScheme="primary" size="sm" onClick={onCopy}>
+        <Button size="sm" onClick={onCopy}>
           {hasCopied ? t("share.button_copied") : t("share.button_copy")}
         </Button>
       </InputRightElement>

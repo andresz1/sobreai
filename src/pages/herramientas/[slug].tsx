@@ -3,7 +3,8 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
-  Grid,
+  Button,
+  ButtonGroup,
   Heading,
   SimpleGrid,
   Stack,
@@ -13,6 +14,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { NextSeo } from "next-seo";
 
 import { LayoutBody } from "@/components/Layout/LayoutBody";
 import { LayoutFooter } from "@/components/Layout/LayoutFooter";
@@ -20,74 +22,105 @@ import { LayoutHeader } from "@/components/Layout/LayoutHeader";
 import { LayoutMain } from "@/components/Layout/LayoutMain";
 import { ShareIconButton } from "@/components/Share/ShareIconButton";
 import { createExtractors } from "@/extractors";
+import { Tool } from "@/types/Tool";
 
-const ToolDetailPage = ({ tool }) => {
-  const { t } = useTranslation(["common", "detail"]);
+interface ToolsDetailPage {
+  tool: Tool;
+}
+
+const ToolsDetailPage = ({ tool }) => {
+  const { t } = useTranslation("detail");
+
+  const { category } = tool;
 
   return (
-    <LayoutBody>
-      <LayoutHeader />
+    <>
+      <NextSeo
+        title={t("seo.title", { name: tool.name })}
+        description={t("seo.description", { name: tool.name })}
+      />
 
-      <LayoutMain>
-        <SimpleGrid
-          py={8}
-          gap={10}
-          templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
-        >
-          <Stack spacing={4}>
-            <Breadcrumb>
-              <BreadcrumbItem>
-                <Link href="/" passHref legacyBehavior>
-                  <BreadcrumbLink>Home</BreadcrumbLink>
-                </Link>
-              </BreadcrumbItem>
+      <LayoutBody>
+        <LayoutHeader />
 
-              <BreadcrumbItem>
-                <Link href="/" passHref legacyBehavior>
-                  <BreadcrumbLink href="#">Category</BreadcrumbLink>
-                </Link>
-              </BreadcrumbItem>
+        <LayoutMain>
+          <SimpleGrid
+            py={8}
+            gap={10}
+            templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
+          >
+            <Stack spacing={4}>
+              <Breadcrumb fontSize="xl">
+                <BreadcrumbItem>
+                  <Link href="/" passHref legacyBehavior>
+                    <BreadcrumbLink>{t("breadcrumb.home")}</BreadcrumbLink>
+                  </Link>
+                </BreadcrumbItem>
 
-              <BreadcrumbItem isCurrentPage>
-                <BreadcrumbLink href="#">Breadcrumb</BreadcrumbLink>
-              </BreadcrumbItem>
-            </Breadcrumb>
+                <BreadcrumbItem>
+                  <Link href={`/${category.slug}`} passHref legacyBehavior>
+                    <BreadcrumbLink>{category.name}</BreadcrumbLink>
+                  </Link>
+                </BreadcrumbItem>
 
-            <Heading as="h1">{tool.name}</Heading>
+                <BreadcrumbItem isCurrentPage>
+                  <BreadcrumbLink href={`/herramientas/${tool.slug}`}>
+                    {tool.name}
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+              </Breadcrumb>
 
-            <AspectRatio
-              ratio={128 / 80}
-              bgColor="blackAlpha.100"
-              borderRadius="lg"
-              boxShadow="lg"
-              overflow="hidden"
-            >
-              <Image src={tool.thumbnail} alt="" objectFit="contain" fill />
-            </AspectRatio>
-          </Stack>
+              <Heading as="h1">{tool.name}</Heading>
 
-          <Stack>
-            <Heading as="h2">Description</Heading>
-
-            <Text>{tool.description}</Text>
-
-            <Stack direction="row">
-              <ShareIconButton
-                title={t("share.title")}
-                text={t("share.text")}
-                aria-label=""
-              />
+              <AspectRatio
+                ratio={128 / 80}
+                bgColor="blackAlpha.100"
+                borderRadius="lg"
+                boxShadow="lg"
+                overflow="hidden"
+              >
+                <Image
+                  src={tool.thumbnail}
+                  alt={t("screenshot", { name: tool.name })}
+                  objectFit="contain"
+                  fill
+                  priority
+                />
+              </AspectRatio>
             </Stack>
-          </Stack>
-        </SimpleGrid>
-      </LayoutMain>
 
-      <LayoutFooter />
-    </LayoutBody>
+            <Stack as="section" spacing={4}>
+              <Heading as="h2">{t("description_section.title")}</Heading>
+
+              <Text fontSize="2xl">{tool.description}</Text>
+
+              <ButtonGroup size="lg" justifyContent="center">
+                <ShareIconButton
+                  title={t("share.title")}
+                  text={t("share.text")}
+                  aria-label={t("description_section.share_button")}
+                />
+
+                <Button
+                  as="a"
+                  href={tool.url}
+                  target="_blank"
+                  rel="noopener nofollow"
+                >
+                  {t("description_section.link")}
+                </Button>
+              </ButtonGroup>
+            </Stack>
+          </SimpleGrid>
+        </LayoutMain>
+
+        <LayoutFooter />
+      </LayoutBody>
+    </>
   );
 };
 
-export async function getStaticPaths({ locale }) {
+export async function getStaticPaths() {
   const extractors = createExtractors();
 
   const tools = await extractors.tools.fetchAll();
@@ -119,4 +152,4 @@ export async function getStaticProps({ locale, params }) {
   };
 }
 
-export default ToolDetailPage;
+export default ToolsDetailPage;

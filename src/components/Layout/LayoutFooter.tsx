@@ -13,7 +13,7 @@ export const LayoutFooter = () => {
       <Stack
         direction={{ base: "column", md: "row" }}
         alignItems="center"
-        justify="space-around"
+        justify="space-between"
         spacing={6}
       >
         <Text fontSize="md" textAlign="center">
@@ -28,7 +28,6 @@ export const LayoutFooter = () => {
             target="_blank"
             colorScheme="facebook"
             aria-label="Facebook"
-            borderRadius="full"
             icon={<FaFacebook />}
           />
 
@@ -39,7 +38,6 @@ export const LayoutFooter = () => {
             target="_blank"
             colorScheme="twitter"
             aria-label="Twitter"
-            borderRadius="full"
             icon={<FaTwitter />}
           />
 
@@ -49,7 +47,6 @@ export const LayoutFooter = () => {
             rel="noopener noreferrer nofollow"
             target="_blank"
             aria-label="Discord"
-            borderRadius="full"
             icon={<FaDiscord />}
           />
         </Stack>

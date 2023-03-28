@@ -1,6 +1,9 @@
 import { extendTheme } from "@chakra-ui/react";
 import { League_Spartan } from "next/font/google";
 
+import { Button } from "./components/button";
+import { Input, NumberInput } from "./components/input";
+
 const fonts = League_Spartan({ subsets: ["latin"] });
 
 const breakpoints = {
@@ -27,6 +30,11 @@ const theme = extendTheme({
   },
   config: {
     cssVarPrefix: "ia",
+  },
+  components: {
+    Button,
+    Input,
+    NumberInput,
   },
   breakpoints,
 });

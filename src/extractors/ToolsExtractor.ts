@@ -4,18 +4,36 @@ import slugify from "slugify";
 
 import { Tool } from "@/types/Tool";
 
-export class ToolsExtractor {
-  constructor() {}
+import { CategoriesExtractor } from "./CategoriesExtractor";
 
-  async fetchAll(): Promise<Array<Tool>> {
-    const location = path.join(process.cwd(), "public/files/tools.json");
-    const tools = JSON.parse(fs.readFileSync(location, "utf-8")).map(
-      (tool) => ({
+export class ToolsExtractor {
+  categories: CategoriesExtractor;
+
+  constructor({ categories }: { categories: CategoriesExtractor }) {
+    this.categories = categories;
+  }
+
+  async fetchAll({
+    slug,
+    limit = Infinity,
+  }: { slug?: string; limit?: number } = {}): Promise<Array<Tool>> {
+    const categories = await this.categories.fetchAll();
+
+    const tools = categories
+      .filter((category) => category.slug !== slug)
+      .reduce(
+        (acc, { tools, ...category }) => [
+          ...acc,
+          ...tools.map((tool) => ({ ...tool, category })),
+        ],
+        []
+      )
+      .map((tool) => ({
         ...tool,
-        slug: slugify(tool.name),
+        slug: slugify(tool.name, { lower: true }),
         thumbnail: `/images/captures/${tool.name}.png`,
-      })
-    );
+      }))
+      .slice(0, limit);
 
     return tools;
   }

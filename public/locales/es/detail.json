@@ -1,0 +1,16 @@
+{
+  "seo": {
+    "title": "{{name}}",
+    "description": "{{description}}"
+  },
+  "screenshot": "Captura de pantalla de {{name}}",
+  "breadcrumb": {
+    "home": "Inicio",
+    "current": "{{name}}"
+  },
+  "description_section": {
+    "title": "Descripción",
+    "share_button": "Compartir",
+    "link": "Visitar"
+  }
+}

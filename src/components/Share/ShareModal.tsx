@@ -1,6 +1,5 @@
 import { IconButton } from "@chakra-ui/button";
 import { Flex, Stack, Text } from "@chakra-ui/layout";
-import { useBreakpointValue } from "@chakra-ui/media-query";
 import {
   Modal,
   ModalBody,
@@ -22,7 +21,6 @@ export type ShareModalProps = Omit<ModalProps, "children"> & {
 
 const ShareModal = ({ text, url, ...others }: ShareModalProps) => {
   const { t } = useTranslation("common");
-  const size = useBreakpointValue({ base: "full", md: "sm" });
 
   const share = ({
     href,
@@ -67,13 +65,16 @@ const ShareModal = ({ text, url, ...others }: ShareModalProps) => {
   };
 
   return (
-    <Modal size={size} isCentered {...others}>
+    <Modal size={{ base: "full", md: "md" }} isCentered {...others}>
       <ModalOverlay />
+
       <ModalContent>
         <ModalHeader>{t("share.title")}</ModalHeader>
+
         <ModalCloseButton />
+
         <ModalBody paddingBottom={6}>
-          <Stack spacing={4}>
+          <Stack spacing={6}>
             <Text>{t("share.social")}</Text>
 
             <Flex justifyContent="center">
@@ -99,7 +100,6 @@ const ShareModal = ({ text, url, ...others }: ShareModalProps) => {
               </Stack>
             </Flex>
 
-            <Text>{t("share.copy")}</Text>
             <ShareInputGroup value={url} />
           </Stack>
         </ModalBody>

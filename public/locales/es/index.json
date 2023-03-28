@@ -1,4 +1,18 @@
 {
-  "h1": "Todo sobre IA",
-  "description": "Descubre la últimas novedades y aplicaciones sobre IA"
+  "seo": {
+    "title": "Descubre aplicaciones y herramientas sobre IA",
+    "description": "Todo lo que necesitas saber sobre AI. Descubre aplicaciones y herramientas sobre IA"
+  },
+  "hero": {
+    "title": "Sobre IA",
+    "description": "Todo lo que necesitas saber sobre AI. Descubre aplicaciones y herramientas sobre IA"
+  },
+  "tools_section": {
+    "title": "Explora",
+    "description": ""
+  },
+  "categories_section": {
+    "title": "Categorias",
+    "description": ""
+  }
 }
