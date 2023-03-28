@@ -1,4 +1,11 @@
-import { Button, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Heading,
+  SimpleGrid,
+  Stack,
+  Text,
+} from "@chakra-ui/react";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -65,7 +72,7 @@ const IndexPage = ({ categories, tools }: IndexPage) => {
           <Stack as="section" spacing={6}>
             <Heading as="h2">{t("categories_section.title")}</Heading>
 
-            <Stack direction="row" spacing={4}>
+            <Box display="inline-block">
               {categories.map((category) => (
                 <Link
                   key={category.slug}
@@ -73,10 +80,12 @@ const IndexPage = ({ categories, tools }: IndexPage) => {
                   passHref
                   legacyBehavior
                 >
-                  <Button as="a">{category.name}</Button>
+                  <Button as="a" mr={4} mb={4}>
+                    {category.name}
+                  </Button>
                 </Link>
               ))}
-            </Stack>
+            </Box>
           </Stack>
         </Stack>
       </LayoutMain>

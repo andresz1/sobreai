@@ -92,7 +92,7 @@ const ToolsDetailPage = ({ tool }) => {
             <Stack as="section" spacing={4}>
               <Heading as="h2">{t("description_section.title")}</Heading>
 
-              <Text fontSize="2xl">{tool.description}</Text>
+              <Text fontSize="xl">{tool.description}</Text>
 
               <ButtonGroup size="lg" justifyContent="center">
                 <ShareIconButton
