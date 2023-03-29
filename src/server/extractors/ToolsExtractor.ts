@@ -32,7 +32,7 @@ export class ToolsExtractor {
       .map((slug) => {
         const tool = tools[slug];
         const category = categories[tool.category];
-        const thumbnail = `/images/captures/${tool.name}.png`;
+        const thumbnail = `/images/captures/${slug}.png`;
 
         return {
           ...tool,
