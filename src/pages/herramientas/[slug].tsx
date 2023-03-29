@@ -1,16 +1,12 @@
 import {
-  AspectRatio,
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
-  Button,
-  ButtonGroup,
   Heading,
   SimpleGrid,
   Stack,
   Text,
 } from "@chakra-ui/react";
-import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -20,98 +16,59 @@ import { LayoutBody } from "@/components/Layout/LayoutBody";
 import { LayoutFooter } from "@/components/Layout/LayoutFooter";
 import { LayoutHeader } from "@/components/Layout/LayoutHeader";
 import { LayoutMain } from "@/components/Layout/LayoutMain";
-import { ShareIconButton } from "@/components/Share/ShareIconButton";
-import { createExtractors } from "@/extractors";
+import { ToolCard } from "@/components/Tool/ToolCard";
+import { createExtractors } from "@/server/extractors";
+import { Category } from "@/types/Category";
 import { Tool } from "@/types/Tool";
 
-interface ToolsDetailPage {
-  tool: Tool;
+interface CategoryPageProps {
+  category: Category;
+  tools: Array<Tool>;
 }
 
-const ToolsDetailPage = ({ tool }) => {
-  const { t } = useTranslation("detail");
-
-  const { category } = tool;
+const CategoryPage = ({ category, tools }: CategoryPageProps) => {
+  const { t } = useTranslation(["category"]);
 
   return (
     <>
       <NextSeo
-        title={t("seo.title", { name: tool.name })}
-        description={t("seo.description", { name: tool.name })}
+        title={t("seo.title", { name: category.name })}
+        description={t("seo.description", { name: category.name })}
       />
-
       <LayoutBody>
         <LayoutHeader />
 
         <LayoutMain>
-          <SimpleGrid
-            py={8}
-            gap={10}
-            templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
-          >
-            <Stack spacing={4}>
-              <Breadcrumb fontSize="xl">
-                <BreadcrumbItem>
-                  <Link href="/" passHref legacyBehavior>
-                    <BreadcrumbLink>{t("breadcrumb.home")}</BreadcrumbLink>
-                  </Link>
-                </BreadcrumbItem>
+          <Breadcrumb my={8} fontSize="xl">
+            <BreadcrumbItem>
+              <Link href="/" passHref legacyBehavior>
+                <BreadcrumbLink>{t("breadcrumb.home")}</BreadcrumbLink>
+              </Link>
+            </BreadcrumbItem>
 
-                <BreadcrumbItem>
-                  <Link href={`/${category.slug}`} passHref legacyBehavior>
-                    <BreadcrumbLink>{category.name}</BreadcrumbLink>
-                  </Link>
-                </BreadcrumbItem>
+            <BreadcrumbItem>
+              <BreadcrumbLink>
+                {t("breadcrumb.current", { name: category.name })}
+              </BreadcrumbLink>
+            </BreadcrumbItem>
+          </Breadcrumb>
 
-                <BreadcrumbItem isCurrentPage>
-                  <BreadcrumbLink href={`/herramientas/${tool.slug}`}>
-                    {tool.name}
-                  </BreadcrumbLink>
-                </BreadcrumbItem>
-              </Breadcrumb>
+          <Stack spacing={8}>
+            <Stack spacing={0}>
+              <Heading as="h1">{category.name}</Heading>
 
-              <Heading as="h1">{tool.name}</Heading>
-
-              <AspectRatio
-                ratio={128 / 80}
-                bgColor="blackAlpha.100"
-                borderRadius="lg"
-                boxShadow="lg"
-                overflow="hidden"
-              >
-                <Image
-                  src={tool.thumbnail}
-                  alt={t("screenshot", { name: tool.name })}
-                  objectFit="contain"
-                  fill
-                  priority
-                />
-              </AspectRatio>
+              <Text fontSize="xl">{category.description}</Text>
             </Stack>
 
-            <Stack as="section" spacing={4}>
-              <Heading as="h2">{t("description_section.title")}</Heading>
-
-              <Text fontSize="xl">{tool.description}</Text>
-
-              <ButtonGroup size="lg" justifyContent="center">
-                <ShareIconButton
-                  title={t("share.title")}
-                  text={t("share.text")}
-                  aria-label={t("description_section.share_button")}
-                />
-
-                <Button
-                  as="a"
-                  href={tool.url}
-                  target="_blank"
-                  rel="noopener nofollow"
-                >
-                  {t("description_section.link")}
-                </Button>
-              </ButtonGroup>
-            </Stack>
-          </SimpleGrid>
+            <SimpleGrid
+              templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(3, 1fr)" }}
+              gap={6}
+            >
+              {tools.map((tool) => (
+                <ToolCard key={tool.slug} tool={tool} />
+              ))}
+            </SimpleGrid>
+          </Stack>
         </LayoutMain>
 
         <LayoutFooter />
@@ -123,10 +80,10 @@ const ToolsDetailPage = ({ tool }) => {
 export async function getStaticPaths() {
   const extractors = createExtractors();
 
-  const tools = await extractors.tools.fetchAll();
+  const categories = extractors.categories.fetchAll();
 
   return {
-    paths: tools.map((project) => ({ params: { slug: project.slug } })),
+    paths: categories.map((category) => ({ params: { slug: category.slug } })),
     fallback: false,
   };
 }
@@ -135,21 +92,25 @@ export async function getStaticProps({ locale, params }) {
   const { slug } = params;
   const extractors = createExtractors();
 
-  const [i18n, tool] = await Promise.all([
-    serverSideTranslations(locale, ["common", "detail"]),
-    extractors.tools.fetchOne({ slug }),
+  const i18n = await serverSideTranslations(locale, [
+    "common",
+    "tool",
+    "category",
   ]);
+  const category = extractors.categories.fetchOne({ slug });
+  const tools = extractors.tools.fetchAll({ category: slug });
 
-  if (!tool) {
+  if (!category) {
     return { notFound: true };
   }
 
   return {
     props: {
       ...i18n,
-      tool,
+      category,
+      tools,
     },
   };
 }
 
-export default ToolsDetailPage;
+export default CategoryPage;

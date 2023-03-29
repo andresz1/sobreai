@@ -3,7 +3,7 @@
     "title": "{{name}}",
     "description": "{{description}}"
   },
-  "screenshot": "Captura de pantalla de {{name}}",
+  "image": "Captura de pantalla de {{name}}",
   "breadcrumb": {
     "home": "Inicio",
     "current": "{{name}}"

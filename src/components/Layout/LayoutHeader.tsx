@@ -30,7 +30,7 @@ export const LayoutHeader = () => {
 
           <NextLink href="/" passHref legacyBehavior>
             <Link fontSize="xl" fontWeight="bold">
-              Sobre IA
+              SobreIA
             </Link>
           </NextLink>
         </Stack>

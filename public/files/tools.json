@@ -1,40 +1,30 @@
-[
-  {
-    "name": "Chatbots",
-    "description": "Description",
-    "tools": [
-      {
-        "name": "markprompt",
-        "url": "https://markprompt.com",
-        "description": "Crea un chatbot a partir de ficheros markdown de forma sencilla"
-      },
-      {
-        "name": "MacGPT",
-        "url": "https://www.macgpt.com/",
-        "description": "Accede desde donde sea a ChatGPT en tu Mac y úsalo incluso en campos de texto"
-      }
-    ]
+{
+  "markprompt": {
+    "name": "markprompt",
+    "url": "https://markprompt.com",
+    "description": "Crea un chatbot a partir de ficheros markdown de forma sencilla",
+    "category": "chatbots",
+    "occupations": []
   },
-  {
-    "name": "Paternidad",
-    "description": "Description",
-    "tools": [
-      {
-        "name": "milo",
-        "url": "https://www.joinmilo.com",
-        "description": "Crea un chatbot a partir de ficheros markdown de forma sencilla"
-      }
-    ]
+  "macgpt": {
+    "name": "MacGPT",
+    "url": "https://www.macgpt.com/",
+    "description": "Accede desde donde sea a ChatGPT en tu Mac y úsalo incluso en campos de texto",
+    "category": "chatbots",
+    "occupations": []
   },
-  {
-    "name": "Programación",
-    "description": "Description",
-    "tools": [
-      {
-        "name": "codesnippets",
-        "url": "https://codesnippets.ai",
-        "description": "Genera, refactoriza, debugea y documenta tus fragmentos de código con GPT3"
-      }
-    ]
+  "milo": {
+    "name": "milo",
+    "url": "https://www.joinmilo.com",
+    "description": "Crea un chatbot a partir de ficheros markdown de forma sencilla",
+    "category": "paternidad",
+    "occupations": []
+  },
+  "codesnippets": {
+    "name": "codesnippets",
+    "url": "https://codesnippets.ai",
+    "description": "Genera, refactoriza, debugea y documenta tus fragmentos de código con GPT3",
+    "category": "programacion",
+    "occupations": []
   }
-]
+}

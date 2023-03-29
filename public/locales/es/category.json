@@ -1,0 +1,10 @@
+{
+  "seo": {
+    "title": "Herramientas IA sobre {{name}}",
+    "description": "Descubre aplicaciones, herramientas y sitios web sobre {{name}}"
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "current": "{{name}}"
+  }
+}

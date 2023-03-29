@@ -1,6 +1,5 @@
 import {
   AspectRatio,
-  Box,
   Heading,
   LinkBox,
   LinkBoxProps,
@@ -10,6 +9,7 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 
 import { Tool } from "@/types/Tool";
 
@@ -18,6 +18,8 @@ export interface ToolCardProps extends LinkBoxProps {
 }
 
 export const ToolCard = ({ tool, ...others }: ToolCardProps) => {
+  const { t } = useTranslation();
+
   return (
     <LinkBox
       as="article"
@@ -29,12 +31,17 @@ export const ToolCard = ({ tool, ...others }: ToolCardProps) => {
       {...others}
     >
       <AspectRatio ratio={128 / 80} bgColor="blackAlpha.100">
-        <Image src={tool.thumbnail} alt="" objectFit="contain" fill />
+        <Image
+          src={tool.thumbnail}
+          alt={t("image", { name: tool.name })}
+          objectFit="contain"
+          fill
+        />
       </AspectRatio>
 
       <Stack as="footer" p={4}>
-        <Heading as="h2" fontSize="2xl">
-          <Link href={`/herramientas/${tool.slug}`} passHref legacyBehavior>
+        <Heading as="h3" fontSize="2xl">
+          <Link href={`/herramienta/${tool.slug}`} passHref legacyBehavior>
             <LinkOverlay>{tool.name}</LinkOverlay>
           </Link>
         </Heading>

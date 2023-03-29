@@ -17,7 +17,7 @@ import { LayoutMain } from "@/components/Layout/LayoutMain";
 import { RepositoryButton } from "@/components/Shared/RepositoryButton";
 import { CreateToolButton } from "@/components/Tool/CreateToolButton";
 import { ToolCard } from "@/components/Tool/ToolCard";
-import { createExtractors } from "@/extractors";
+import { createExtractors } from "@/server/extractors";
 import { Category } from "@/types/Category";
 import { Tool } from "@/types/Tool";
 
@@ -31,7 +31,7 @@ const IndexPage = ({ categories, tools }: IndexPage) => {
 
   return (
     <>
-      <NextSeo title={t("seo.title")} description={t("seo.title")} />
+      <NextSeo title={t("seo.title")} description={t("seo.description")} />
 
       <LayoutHeader />
 
@@ -47,11 +47,9 @@ const IndexPage = ({ categories, tools }: IndexPage) => {
           </Stack>
 
           <Stack spacing={4} direction={{ base: "column", md: "row" }}>
-            <CreateToolButton size="lg">Agregar herramienta</CreateToolButton>
-
-            <RepositoryButton size="lg" colorScheme="gray" variant="outline">
-              Star on GitHub
-            </RepositoryButton>
+            <CreateToolButton size="lg">
+              {t("hero.suggest_button")}
+            </CreateToolButton>
           </Stack>
         </Stack>
 
@@ -76,7 +74,7 @@ const IndexPage = ({ categories, tools }: IndexPage) => {
               {categories.map((category) => (
                 <Link
                   key={category.slug}
-                  href={`/${category.slug}`}
+                  href={`/herramientas/${category.slug}`}
                   passHref
                   legacyBehavior
                 >
@@ -87,6 +85,39 @@ const IndexPage = ({ categories, tools }: IndexPage) => {
               ))}
             </Box>
           </Stack>
+
+          <SimpleGrid
+            templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
+            gap={6}
+          >
+            <Stack>
+              <Heading as="h3" fontSize="lg">
+                {t("seo_section.about.title")}
+              </Heading>
+              <Text>{t("seo_section.about.description")}</Text>
+            </Stack>
+
+            <Stack>
+              <Heading as="h3" fontSize="lg">
+                {t("seo_section.revolution.title")}
+              </Heading>
+              <Text>{t("seo_section.revolution.description")}</Text>
+            </Stack>
+
+            <Stack>
+              <Heading as="h3" fontSize="lg">
+                {t("seo_section.benefits.title")}
+              </Heading>
+              <Text>{t("seo_section.benefits.description")}</Text>
+            </Stack>
+
+            <Stack>
+              <Heading as="h3" fontSize="lg">
+                {t("seo_section.community.title")}
+              </Heading>
+              <Text>{t("seo_section.community.description")}</Text>
+            </Stack>
+          </SimpleGrid>
         </Stack>
       </LayoutMain>
 
@@ -96,13 +127,15 @@ const IndexPage = ({ categories, tools }: IndexPage) => {
 };
 
 export async function getStaticProps({ locale }) {
-  const i18n = await serverSideTranslations(locale, ["common", "index"]);
   const extractors = createExtractors();
 
-  const [categories, tools] = await Promise.all([
-    extractors.categories.fetchAll(),
-    extractors.tools.fetchAll(),
+  const i18n = await serverSideTranslations(locale, [
+    "common",
+    "tool",
+    "index",
   ]);
+  const categories = extractors.categories.fetchAll();
+  const tools = extractors.tools.fetchAll({ limit: 3 });
 
   return {
     props: {

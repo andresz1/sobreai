@@ -1,0 +1,17 @@
+{
+  "create_modal": {
+    "title": "Sugerir herramienta",
+    "close_button": "Cerrar",
+    "send_button": "Enviar"
+  },
+  "form": {
+    "url": {
+      "label": "URL",
+      "required_error": "La URL es requerida",
+      "invalid_error": "La URL es invalida"
+    }
+  },
+  "card": {
+    "image": "Captura de pantalla de {{name}}"
+  }
+}

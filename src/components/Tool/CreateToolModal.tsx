@@ -10,6 +10,7 @@ import {
   ModalOverlay,
   ModalProps,
 } from "@chakra-ui/react";
+import { useTranslation } from "next-i18next";
 import { useAsyncCallback } from "react-async-hook";
 
 import { useServices } from "@/components/Services/useServices";
@@ -22,6 +23,7 @@ export const CreateToolModal = ({
   onClose,
   ...others
 }: CreateToolModalProps) => {
+  const { t } = useTranslation("tool");
   const services = useServices();
   const { execute: createTool, loading: isLoading } = useAsyncCallback(
     ({ url }: { url: string }) => {
@@ -49,7 +51,7 @@ export const CreateToolModal = ({
       <ModalOverlay />
 
       <ModalContent>
-        <ModalHeader>Agregar herramienta</ModalHeader>
+        <ModalHeader>{t("create_modal.title")}</ModalHeader>
         <ModalCloseButton />
         <ModalBody>
           <ToolForm id={formId} onSubmit={handleSubmit} />
@@ -58,10 +60,10 @@ export const CreateToolModal = ({
         <ModalFooter>
           <ButtonGroup>
             <Button variant="ghost" onClick={onClose}>
-              Cerrar
+              {t("create_modal.close_button")}
             </Button>
             <Button type="submit" form={formId} isLoading={isLoading}>
-              Enviar
+              {t("create_modal.send_button")}
             </Button>
           </ButtonGroup>
         </ModalFooter>

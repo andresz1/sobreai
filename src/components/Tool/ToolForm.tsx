@@ -1,12 +1,12 @@
 import {
   FormControl,
   FormErrorMessage,
-  FormHelperText,
   FormLabel,
   Input,
   Stack,
   StackProps,
 } from "@chakra-ui/react";
+import { useTranslation } from "next-i18next";
 import { SubmitHandler, useForm } from "react-hook-form";
 
 export interface ToolFormValues {
@@ -19,6 +19,7 @@ export interface ProductFormProps extends Omit<StackProps, "onSubmit"> {
 }
 
 export const ToolForm = ({ onSubmit, ...others }) => {
+  const { t } = useTranslation("tool");
   const {
     register,
     handleSubmit,
@@ -30,19 +31,19 @@ export const ToolForm = ({ onSubmit, ...others }) => {
       new URL(url);
       return true;
     } catch (error) {
-      return "La URL es invalida";
+      return t("form.url.invalid_error");
     }
   };
 
   return (
     <Stack as="form" {...others} onSubmit={handleSubmit(onSubmit)}>
       <FormControl isInvalid={!!errors.url}>
-        <FormLabel>URL</FormLabel>
+        <FormLabel>{t("form.url.label")}</FormLabel>
         <Input
           type="text"
           placeholder="https://www.awesomeai.com"
           {...register("url", {
-            required: "La URL es requerida",
+            required: t("form.url.required_error"),
             validate: validateURL,
           })}
         />

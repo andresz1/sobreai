@@ -23,7 +23,7 @@ export const LayoutFooter = () => {
         <Stack direction="row" spacing={4}>
           <IconButton
             as="a"
-            href="https://www.facebook.com/todosobreia"
+            href="https://www.facebook.com/sobreia"
             rel="noopener noreferrer nofollow"
             target="_blank"
             colorScheme="facebook"
@@ -33,7 +33,7 @@ export const LayoutFooter = () => {
 
           <IconButton
             as="a"
-            href="https://twitter.com/todosobreia"
+            href="https://twitter.com/sobreia"
             rel="noopener noreferrer nofollow"
             target="_blank"
             colorScheme="twitter"
@@ -43,7 +43,7 @@ export const LayoutFooter = () => {
 
           <IconButton
             as="a"
-            href="https://www.linkedin.com/company/todosobreia"
+            href="https://www.linkedin.com/company/sobreia"
             rel="noopener noreferrer nofollow"
             target="_blank"
             aria-label="Discord"

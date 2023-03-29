@@ -1,0 +1,14 @@
+{
+  "chatbots": {
+    "name": "Chatbots",
+    "description": "Herramientas IA que hace preguntas y responden en lenguaje natural."
+  },
+  "paternidad": {
+    "name": "Paternidad",
+    "description": "Herramientas IA que te ayudan a mejorar tu vida como padre y te hacen más productivo."
+  },
+  "programacion": {
+    "name": "Programación",
+    "description": "Herramientas IA que te ayudan a programar más rápido y tomar mejores decisiones."
+  }
+}

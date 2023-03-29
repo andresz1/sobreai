@@ -1,18 +1,38 @@
 {
   "seo": {
-    "title": "Descubre aplicaciones y herramientas sobre IA",
-    "description": "Todo lo que necesitas saber sobre AI. Descubre aplicaciones y herramientas sobre IA"
+    "title": "Descubre aplicaciones, herramientas y sitios web creados con Inteligencia Artificial",
+    "description": "SobreAI es una web sobre Inteligencia Artificial, donde podrás descubrir las últimas aplicaciones, herramientas y sitios web creadas con esta tecnología"
   },
   "hero": {
-    "title": "Sobre IA",
-    "description": "Todo lo que necesitas saber sobre AI. Descubre aplicaciones y herramientas sobre IA"
+    "title": "SobreIA",
+    "description": "Descubre las últimas innovaciones en herramientas, sitios web y aplicaciones con Inteligencia Artificial",
+    "suggest_button": "Sugerir herramienta"
   },
   "tools_section": {
-    "title": "Explora",
-    "description": ""
+    "title": "Recientemente agregadas"
   },
   "categories_section": {
-    "title": "Categorias",
-    "description": ""
+    "title": "Todas las categorias"
+  },
+  "occupations_section": {
+    "title": "Para tu trabajo"
+  },
+  "seo_section": {
+    "about": {
+      "title": "¿Qué es SobreAI?",
+      "description": "SobreAI es un sitio web sobre Inteligencia Artificial, donde podrás descubrir las últimas innovaciones en aplicaciones, herramientas y sitios web creados con esta tecnología. Encontrarás información útil y relevante para aprender más sobre la IA y cómo está cambiando el mundo."
+    },
+    "revolution": {
+      "title": "¡Únete a la revolución de la IA!",
+      "description": "Explora nuestro sitio web y descubre las últimas innovaciones en IA. Si ves que alguna se nos escapa no te olvides en sugerirla. Revisamos cada sugerencia de forma detallada para generar contenido de calidad y tratamos de publicarla lo antes posible."
+    },
+    "benefits": {
+      "title": "Mejora tu productividad",
+      "description": "La Inteligencia Artificial está transformando la forma en que interactuamos con la tecnología y nos brinda nuevas oportunidades para mejorar nuestro día a día. Algunos ejemplos de cómo la IA está cambiando nuestras vidas son herramientas como: Chatbots, Generadores de Imágenes, Generadores de Contenido, etc."
+    },
+    "community": {
+      "title": "Comunidad",
+      "description": "En nuestro sitio web, creemos en la importancia de crear una comunidad fuerte y comprometida alrededor de la Inteligencia Artificial. Es por eso que este sitio web es de código abierto y se encuentra alojado en GitHub."
+    }
   }
 }
