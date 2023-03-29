@@ -21,7 +21,7 @@ export const LayoutHeader = () => {
       <LayoutContainer>
         <Stack direction="row" alignItems="center" spacing={2}>
           <Link href="/">
-            <Logo color="black" w={6} h={6} />
+            <Logo color="black" w={10} h={10} />
           </Link>
 
           <Text fontSize="xl" color="grey">
