@@ -8,7 +8,7 @@
 
 <p align="center">
   <img alt="license badge" src="https://img.shields.io/badge/license-MIT-blue.svg">
-  <a href="https://discord.gg/QxEcWYc">	
+  <a href="https://discord.gg/fMWVJVcW">	
     <image alt="discord chat" src="https://img.shields.io/discord/704771560782692474?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2">
   </a>
 </p>
