@@ -6,7 +6,8 @@
   "hero": {
     "title": "SobreIA",
     "description": "Descubre las últimas innovaciones en herramientas, sitios web y aplicaciones con Inteligencia Artificial",
-    "suggest_button": "Sugerir herramienta"
+    "suggest_button": "Sugerir herramienta",
+    "search_button": "Ver todas"
   },
   "tools_section": {
     "title": "Recientemente agregadas"

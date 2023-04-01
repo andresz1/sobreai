@@ -30,7 +30,7 @@
   "siteguide": {
     "name": "SiteGuide",
     "url": "https://siteguide.ai",
-    "description": "Permite a los usuarios de tu sitio web hacerle preguntas. SiteGuide aprende automáticamente de tu sitio web y ayuda a los usuarios a navegarla y responder cualquier pregunta.",
+    "description": "Facilita la interacción con los usuarios de tu sitio web a través de SiteGuide, una herramienta que aprende automáticamente de tu contenido para proporcionar respuestas precisas a cualquier pregunta. Con SiteGuide, tus usuarios podrán navegar por tu sitio web de manera intuitiva y obtener la información que necesitan de forma rápida y eficiente.",
     "category": "chatbots",
     "occupations": []
   },

@@ -12,5 +12,8 @@
     "title": "Descripción",
     "share_button": "Compartir",
     "link": "Visitar"
+  },
+  "related_section": {
+    "title": "Herramientas relacionadas"
   }
 }

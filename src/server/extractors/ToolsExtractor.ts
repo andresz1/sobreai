@@ -57,4 +57,24 @@ export class ToolsExtractor {
 
     return tools.find((tool) => tool.slug === slug);
   }
+
+  fetchRelated({ slug, limit }: { slug: string; limit: number }) {
+    const tool = this.fetchOne({ slug });
+
+    if (!tool) {
+      return [];
+    }
+
+    const tools = this.fetchAll({ category: tool.category.slug });
+    const current = tools.findIndex((tool) => tool.slug === slug);
+
+    const indices = Array.from(
+      { length: limit },
+      (_, index) => (current + index + 1) % tools.length
+    )
+      .filter((index) => index !== current)
+      .map((index) => tools[index]);
+
+    return [...new Set(indices)];
+  }
 }

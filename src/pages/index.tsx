@@ -1,6 +1,7 @@
 import {
   Box,
   Button,
+  Flex,
   Heading,
   SimpleGrid,
   Stack,
@@ -36,26 +37,26 @@ const IndexPage = ({ categories, tools }: IndexPage) => {
       <LayoutHeader />
 
       <LayoutMain>
-        <Stack py={{ base: 8, md: 16 }} align="center" spacing={8}>
-          <Stack textAlign="center" spacing={0} maxW="container.sm">
-            <Heading as="h1" fontSize={{ base: "4xl", md: "6xl" }}>
-              {t("hero.title")}
-            </Heading>
-            <Text as="p" fontSize={{ base: "xl", md: "2xl" }}>
-              {t("hero.description")}
-            </Text>
-          </Stack>
+        <Stack spacing={8}>
+          <Stack align="center" spacing={4}>
+            <Stack textAlign="center" spacing={0} maxW="container.sm">
+              <Heading as="h1" fontSize={{ base: "4xl", md: "6xl" }}>
+                {t("hero.title")}
+              </Heading>
+              <Text as="p" fontSize={{ base: "xl", md: "2xl" }}>
+                {t("hero.description")}
+              </Text>
+            </Stack>
 
-          <Stack spacing={4} direction={{ base: "column", md: "row" }}>
             <CreateToolButton size="lg">
               {t("hero.suggest_button")}
             </CreateToolButton>
           </Stack>
-        </Stack>
 
-        <Stack spacing={{ base: 8, md: 16 }}>
           <Stack as="section" spacing={6}>
-            <Heading as="h2">{t("tools_section.title")}</Heading>
+            <Heading as="h2" fontSize={{ base: "2xl", md: "3xl" }}>
+              {t("tools_section.title")}
+            </Heading>
 
             <SimpleGrid
               templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(3, 1fr)" }}
@@ -65,10 +66,20 @@ const IndexPage = ({ categories, tools }: IndexPage) => {
                 <ToolCard key={tool.slug} tool={tool} />
               ))}
             </SimpleGrid>
+
+            <Flex justify="center">
+              <Link href="/herramientas" passHref legacyBehavior>
+                <Button as="a" size="lg">
+                  {t("hero.search_button")}
+                </Button>
+              </Link>
+            </Flex>
           </Stack>
 
           <Stack as="section" spacing={6}>
-            <Heading as="h2">{t("categories_section.title")}</Heading>
+            <Heading as="h2" fontSize={{ base: "2xl", md: "3xl" }}>
+              {t("categories_section.title")}
+            </Heading>
 
             <Box display="inline-block">
               {categories.map((category) => (
@@ -78,7 +89,7 @@ const IndexPage = ({ categories, tools }: IndexPage) => {
                   passHref
                   legacyBehavior
                 >
-                  <Button as="a" mr={4} mb={4}>
+                  <Button size="md" as="a" mr={2} mb={2}>
                     {category.name}
                   </Button>
                 </Link>

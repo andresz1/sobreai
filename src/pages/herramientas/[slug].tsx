@@ -39,29 +39,36 @@ const CategoryPage = ({ category, tools }: CategoryPageProps) => {
         <LayoutHeader />
 
         <LayoutMain>
-          <Breadcrumb my={8} fontSize="xl">
-            <BreadcrumbItem>
-              <Link href="/" passHref legacyBehavior>
-                <BreadcrumbLink>{t("breadcrumb.home")}</BreadcrumbLink>
-              </Link>
-            </BreadcrumbItem>
-
-            <BreadcrumbItem>
-              <BreadcrumbLink>
-                {t("breadcrumb.current", { name: category.name })}
-              </BreadcrumbLink>
-            </BreadcrumbItem>
-          </Breadcrumb>
-
           <Stack spacing={8}>
-            <Stack spacing={0}>
-              <Heading as="h1">{category.name}</Heading>
+            <Stack spacing={4}>
+              <Breadcrumb fontSize="xl">
+                <BreadcrumbItem>
+                  <Link href="/" passHref legacyBehavior>
+                    <BreadcrumbLink>{t("breadcrumb.home")}</BreadcrumbLink>
+                  </Link>
+                </BreadcrumbItem>
 
-              <Text fontSize="xl">{category.description}</Text>
+                <BreadcrumbItem>
+                  <BreadcrumbLink>
+                    {t("breadcrumb.current", { name: category.name })}
+                  </BreadcrumbLink>
+                </BreadcrumbItem>
+              </Breadcrumb>
+
+              <Stack spacing={0}>
+                <Heading as="h1" fontSize={{ base: "3xl", md: "4xl" }}>
+                  {category.name}
+                </Heading>
+
+                <Text fontSize="xl">{category.description}</Text>
+              </Stack>
             </Stack>
 
             <SimpleGrid
-              templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(3, 1fr)" }}
+              templateColumns={{
+                base: "repeat(1, 1fr)",
+                md: "repeat(3, 1fr)",
+              }}
               gap={6}
             >
               {tools.map((tool) => (
