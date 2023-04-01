@@ -2,21 +2,42 @@
   "markprompt": {
     "name": "markprompt",
     "url": "https://markprompt.com",
-    "description": "Crea un chatbot a partir de ficheros markdown de forma sencilla",
+    "description": "Crea un chatbot a partir de ficheros markdown de forma sencilla.",
     "category": "chatbots",
     "occupations": []
   },
   "macgpt": {
     "name": "MacGPT",
-    "url": "https://www.macgpt.com/",
-    "description": "Accede desde donde sea a ChatGPT en tu Mac y úsalo incluso en campos de texto",
+    "url": "https://www.macgpt.com",
+    "description": "Accede desde donde sea a ChatGPT en tu Mac y úsalo incluso en campos de texto.",
+    "category": "chatbots",
+    "occupations": []
+  },
+  "promptitude": {
+    "name": "Promptitude",
+    "url": "https://promptitude.io",
+    "description": "La forma más sencilla y rápida de integrar GPT en tus aplicaciones y flujos de trabajo.",
+    "category": "chatbots",
+    "occupations": []
+  },
+  "ingestai": {
+    "name": "IngestAI",
+    "url": "https://ingestai.io",
+    "description": "Chatea con cualquier documento usando GPT. Lo podrás usar en tu aplicación de chat favorita o incluirlo en tu sitio web sin código de forma sencilla y rápida.",
+    "category": "chatbots",
+    "occupations": []
+  },
+  "siteguide": {
+    "name": "SiteGuide",
+    "url": "https://siteguide.ai",
+    "description": "Permite a los usuarios de tu sitio web hacerle preguntas. SiteGuide aprende automáticamente de tu sitio web y ayuda a los usuarios a navegarla y responder cualquier pregunta.",
     "category": "chatbots",
     "occupations": []
   },
   "milo": {
     "name": "milo",
     "url": "https://www.joinmilo.com",
-    "description": "Crea un chatbot a partir de ficheros markdown de forma sencilla",
+    "description": "Encuentra paz y tranquilidad en el caos. Un copiloto IA para los padres elaborado con GPT-4.",
     "category": "paternidad",
     "occupations": []
   },
