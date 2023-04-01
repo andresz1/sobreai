@@ -3,6 +3,7 @@ import { League_Spartan } from "next/font/google";
 
 import { Button } from "./components/button";
 import { Input, NumberInput } from "./components/input";
+import { Select } from "./components/select";
 
 const fonts = League_Spartan({ subsets: ["latin"] });
 
@@ -35,6 +36,7 @@ const theme = extendTheme({
     Button,
     Input,
     NumberInput,
+    Select,
   },
   breakpoints,
 });

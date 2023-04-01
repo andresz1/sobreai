@@ -4,6 +4,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { NextSeo } from "next-seo";
 
 import { CategorySection } from "@/components/Category/CategorySection";
+import { CategorySelect } from "@/components/Category/CategorySelect";
 import { LayoutBody } from "@/components/Layout/LayoutBody";
 import { LayoutFooter } from "@/components/Layout/LayoutFooter";
 import { LayoutHeader } from "@/components/Layout/LayoutHeader";
@@ -33,6 +34,11 @@ const FeedPage = ({ categories, tools }: FeedPageProps) => {
             <Heading as="h1" fontSize={{ base: "3xl", md: "4xl" }}>
               {t("title")}
             </Heading>
+
+            <CategorySelect
+              placeholder={t("select_placeholder")}
+              categories={categories}
+            />
 
             <SimpleGrid
               templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(3, 1fr)" }}
