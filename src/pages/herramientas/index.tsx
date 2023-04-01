@@ -31,14 +31,16 @@ const FeedPage = ({ categories, tools }: FeedPageProps) => {
 
         <LayoutMain>
           <Stack spacing={8}>
-            <Heading as="h1" fontSize={{ base: "3xl", md: "4xl" }}>
-              {t("title")}
-            </Heading>
+            <Stack spacing={4}>
+              <Heading as="h1" fontSize={{ base: "3xl", md: "4xl" }}>
+                {t("title")}
+              </Heading>
 
-            <CategorySelect
-              placeholder={t("select_placeholder")}
-              categories={categories}
-            />
+              <CategorySelect
+                placeholder={t("select_placeholder")}
+                categories={categories}
+              />
+            </Stack>
 
             <SimpleGrid
               templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(3, 1fr)" }}
