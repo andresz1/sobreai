@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="logo" src="https://www.sobreia.com/md-logo.png" width="620">
+  <img alt="logo" src="https://www.sobreia.com/md-logo.png" width="420">
 </p>
 
 <p align="center">
