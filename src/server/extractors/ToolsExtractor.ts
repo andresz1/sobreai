@@ -48,6 +48,7 @@ export class ToolsExtractor {
           thumbnail,
         };
       })
+      .reverse()
       .slice(0, limit);
   }
 

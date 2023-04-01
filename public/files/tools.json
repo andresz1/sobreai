@@ -34,6 +34,20 @@
     "category": "chatbots",
     "occupations": []
   },
+  "chatbase": {
+    "name": "Chatbase",
+    "url": "https://www.chatbase.co",
+    "description": "Entrena a ChatGPT con tus datos y agregalo en tu sitio web. Simplemente sube un documento o agrega un enlace a tu sitio web y obten un chatbot similar a ChatGPT que puede responder cualquier pregunta relacionada a los datos que le suministres.",
+    "category": "chatbots",
+    "occupations": []
+  },
+  "chatgptbot": {
+    "name": "ChatGPTBot",
+    "url": "https://twitter.com/ChatGPTBot",
+    "description": "Bot de Twitter hecho con ChatGPT. Responde tweets con ChatGPT de forma automática.",
+    "category": "chatbots",
+    "occupations": []
+  },
   "milo": {
     "name": "milo",
     "url": "https://www.joinmilo.com",
