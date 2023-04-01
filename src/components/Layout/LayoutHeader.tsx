@@ -1,4 +1,4 @@
-import { Link, LinkBox, Stack, Text } from "@chakra-ui/react";
+import { Link, Stack, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
 
 import { Logo } from "@/components/Shared/Logo";
@@ -20,13 +20,9 @@ export const LayoutHeader = () => {
     >
       <LayoutContainer>
         <Stack direction="row" alignItems="center" spacing={2}>
-          <Link href="/">
-            <Logo color="black" w={10} h={10} />
-          </Link>
-
-          <Text fontSize="xl" color="grey">
-            /
-          </Text>
+          <NextLink href="/">
+            <Logo color="black" w={8} h={8} />
+          </NextLink>
 
           <NextLink href="/" passHref legacyBehavior>
             <Link fontSize="xl" fontWeight="bold">
