@@ -3,6 +3,7 @@ import { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { appWithTranslation } from "next-i18next";
 import { DefaultSeo } from "next-seo";
+import { GoogleAnalytics } from "nextjs-google-analytics";
 
 import { LayoutNProgressBar } from "@/components/Layout/LayoutNProgressBar";
 
@@ -15,47 +16,50 @@ function App({ Component, pageProps }: AppProps) {
   const canonical = url.concat(router.asPath);
 
   return (
-    <ChakraProvider theme={theme}>
-      <LayoutNProgressBar />
-      <DefaultSeo
-        openGraph={{
-          type: "website",
-          locale: "es",
-          url: canonical,
-          images: [{ url: "/og-logo.png" }],
-          siteName,
-        }}
-        canonical={canonical}
-        titleTemplate={`%s | ${siteName}`}
-        defaultTitle={siteName}
-        twitter={{
-          handle: "@handle",
-          site: "@site",
-          cardType: "summary_large_image",
-        }}
-        themeColor="#ffffff"
-        additionalLinkTags={[
-          {
-            rel: "apple-touch-icon",
-            sizes: "180x180",
-            href: "/apple-touch-icon.png",
-          },
-          {
-            rel: "icon",
-            type: "image/png",
-            sizes: "16x16",
-            href: "/favicon-16x16.png",
-          },
-          {
-            rel: "icon",
-            type: "image/png",
-            sizes: "32x32",
-            href: "/favicon-32x32.png",
-          },
-        ]}
-      />
-      <Component {...pageProps} />
-    </ChakraProvider>
+    <>
+      <GoogleAnalytics trackPageViews />
+      <ChakraProvider theme={theme}>
+        <LayoutNProgressBar />
+        <DefaultSeo
+          openGraph={{
+            type: "website",
+            locale: "es",
+            url: canonical,
+            images: [{ url: "/og-logo.png" }],
+            siteName,
+          }}
+          canonical={canonical}
+          titleTemplate={`%s | ${siteName}`}
+          defaultTitle={siteName}
+          twitter={{
+            handle: "@handle",
+            site: "@site",
+            cardType: "summary_large_image",
+          }}
+          themeColor="#ffffff"
+          additionalLinkTags={[
+            {
+              rel: "apple-touch-icon",
+              sizes: "180x180",
+              href: "/apple-touch-icon.png",
+            },
+            {
+              rel: "icon",
+              type: "image/png",
+              sizes: "16x16",
+              href: "/favicon-16x16.png",
+            },
+            {
+              rel: "icon",
+              type: "image/png",
+              sizes: "32x32",
+              href: "/favicon-32x32.png",
+            },
+          ]}
+        />
+        <Component {...pageProps} />
+      </ChakraProvider>
+    </>
   );
 }
 
