@@ -43,7 +43,7 @@ export const LayoutFooter = () => {
 
           <IconButton
             as="a"
-            href="https://www.linkedin.com/company/sobreia"
+            href="https://discord.gg/fMWVJVcW"
             rel="noopener noreferrer nofollow"
             target="_blank"
             aria-label="Discord"
