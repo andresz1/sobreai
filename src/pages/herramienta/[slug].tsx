@@ -16,6 +16,7 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { NextSeo } from "next-seo";
 
+import { CategorySection } from "@/components/Category/CategorySection";
 import { LayoutBody } from "@/components/Layout/LayoutBody";
 import { LayoutFooter } from "@/components/Layout/LayoutFooter";
 import { LayoutHeader } from "@/components/Layout/LayoutHeader";
@@ -23,14 +24,16 @@ import { LayoutMain } from "@/components/Layout/LayoutMain";
 import { ShareIconButton } from "@/components/Share/ShareIconButton";
 import { ToolCard } from "@/components/Tool/ToolCard";
 import { createExtractors } from "@/server/extractors";
+import { Category } from "@/types/Category";
 import { Tool } from "@/types/Tool";
 
 interface ToolsDetailPage {
+  categories: Array<Category>;
   tool: Tool;
   related: Array<Tool>;
 }
 
-const ToolsDetailPage = ({ tool, related }) => {
+const ToolsDetailPage = ({ categories, tool, related }) => {
   const { t } = useTranslation("tool_detail");
 
   const { category } = tool;
@@ -142,6 +145,8 @@ const ToolsDetailPage = ({ tool, related }) => {
                 </SimpleGrid>
               </Stack>
             )}
+
+            <CategorySection categories={categories} />
           </Stack>
         </LayoutMain>
 
@@ -177,11 +182,13 @@ export async function getStaticProps({ locale, params }) {
     return { notFound: true };
   }
 
+  const categories = extractors.categories.fetchAll();
   const related = extractors.tools.fetchRelated({ slug, limit: 3 });
 
   return {
     props: {
       ...i18n,
+      categories,
       tool,
       related,
     },

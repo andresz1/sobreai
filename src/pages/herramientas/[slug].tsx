@@ -12,6 +12,7 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { NextSeo } from "next-seo";
 
+import { CategorySection } from "@/components/Category/CategorySection";
 import { LayoutBody } from "@/components/Layout/LayoutBody";
 import { LayoutFooter } from "@/components/Layout/LayoutFooter";
 import { LayoutHeader } from "@/components/Layout/LayoutHeader";
@@ -22,12 +23,13 @@ import { Category } from "@/types/Category";
 import { Tool } from "@/types/Tool";
 
 interface CategoryPageProps {
+  categories: Array<Category>;
   category: Category;
   tools: Array<Tool>;
 }
 
-const CategoryPage = ({ category, tools }: CategoryPageProps) => {
-  const { t } = useTranslation(["category"]);
+const CategoryPage = ({ categories, category, tools }: CategoryPageProps) => {
+  const { t } = useTranslation(["category_feed"]);
 
   return (
     <>
@@ -75,6 +77,8 @@ const CategoryPage = ({ category, tools }: CategoryPageProps) => {
                 <ToolCard key={tool.slug} tool={tool} />
               ))}
             </SimpleGrid>
+
+            <CategorySection categories={categories} />
           </Stack>
         </LayoutMain>
 
@@ -102,8 +106,9 @@ export async function getStaticProps({ locale, params }) {
   const i18n = await serverSideTranslations(locale, [
     "common",
     "tool",
-    "category",
+    "category_feed",
   ]);
+  const categories = extractors.categories.fetchAll();
   const category = extractors.categories.fetchOne({ slug });
   const tools = extractors.tools.fetchAll({ category: slug });
 
@@ -114,6 +119,7 @@ export async function getStaticProps({ locale, params }) {
   return {
     props: {
       ...i18n,
+      categories,
       category,
       tools,
     },

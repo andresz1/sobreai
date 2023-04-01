@@ -3,19 +3,22 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { NextSeo } from "next-seo";
 
+import { CategorySection } from "@/components/Category/CategorySection";
 import { LayoutBody } from "@/components/Layout/LayoutBody";
 import { LayoutFooter } from "@/components/Layout/LayoutFooter";
 import { LayoutHeader } from "@/components/Layout/LayoutHeader";
 import { LayoutMain } from "@/components/Layout/LayoutMain";
 import { ToolCard } from "@/components/Tool/ToolCard";
 import { createExtractors } from "@/server/extractors";
+import { Category } from "@/types/Category";
 import { Tool } from "@/types/Tool";
 
 interface FeedPageProps {
+  categories: Array<Category>;
   tools: Array<Tool>;
 }
 
-const FeedPage = ({ tools }: FeedPageProps) => {
+const FeedPage = ({ categories, tools }: FeedPageProps) => {
   const { t } = useTranslation(["feed"]);
 
   return (
@@ -39,6 +42,8 @@ const FeedPage = ({ tools }: FeedPageProps) => {
                 <ToolCard key={tool.slug} tool={tool} />
               ))}
             </SimpleGrid>
+
+            <CategorySection categories={categories} />
           </Stack>
         </LayoutMain>
 
@@ -53,10 +58,12 @@ export async function getStaticProps({ locale }) {
 
   const i18n = await serverSideTranslations(locale, ["common", "tool", "feed"]);
   const tools = extractors.tools.fetchAll();
+  const categories = extractors.categories.fetchAll();
 
   return {
     props: {
       ...i18n,
+      categories,
       tools,
     },
   };

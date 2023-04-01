@@ -9,6 +9,9 @@
     "button_copy": "Copiar",
     "button_copied": "Copiado"
   },
+  "categories_section": {
+    "title": "Todas las categorias"
+  },
   "footer": {
     "copyright": "Copyright © sobreia"
   }

@@ -12,6 +12,7 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { NextSeo } from "next-seo";
 
+import { CategorySection } from "@/components/Category/CategorySection";
 import { LayoutFooter } from "@/components/Layout/LayoutFooter";
 import { LayoutHeader } from "@/components/Layout/LayoutHeader";
 import { LayoutMain } from "@/components/Layout/LayoutMain";
@@ -76,26 +77,7 @@ const IndexPage = ({ categories, tools }: IndexPage) => {
             </Flex>
           </Stack>
 
-          <Stack as="section" spacing={6}>
-            <Heading as="h2" fontSize={{ base: "2xl", md: "3xl" }}>
-              {t("categories_section.title")}
-            </Heading>
-
-            <Box display="inline-block">
-              {categories.map((category) => (
-                <Link
-                  key={category.slug}
-                  href={`/herramientas/${category.slug}`}
-                  passHref
-                  legacyBehavior
-                >
-                  <Button size="md" as="a" mr={2} mb={2}>
-                    {category.name}
-                  </Button>
-                </Link>
-              ))}
-            </Box>
-          </Stack>
+          <CategorySection categories={categories} />
 
           <SimpleGrid
             templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
