@@ -1,7 +1,7 @@
 import { Stack, Text } from "@chakra-ui/layout";
 import { IconButton } from "@chakra-ui/react";
 import { useTranslation } from "next-i18next";
-import { FaDiscord, FaFacebook, FaTwitter } from "react-icons/fa";
+import { FaDiscord, FaTwitter } from "react-icons/fa";
 
 import { LayoutContainer } from "./LayoutContainer";
 
@@ -23,17 +23,7 @@ export const LayoutFooter = () => {
         <Stack direction="row" spacing={4}>
           <IconButton
             as="a"
-            href="https://www.facebook.com/sobreia"
-            rel="noopener noreferrer nofollow"
-            target="_blank"
-            colorScheme="facebook"
-            aria-label="Facebook"
-            icon={<FaFacebook />}
-          />
-
-          <IconButton
-            as="a"
-            href="https://twitter.com/sobreia"
+            href="https://twitter.com/sobreia_"
             rel="noopener noreferrer nofollow"
             target="_blank"
             colorScheme="twitter"
