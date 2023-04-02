@@ -42,7 +42,7 @@ const ToolsDetailPage = ({ categories, tool, related }) => {
     <>
       <NextSeo
         title={t("seo.title", { name: tool.name })}
-        description={t("seo.description", { name: tool.name })}
+        description={t("seo.description", { description: tool.description })}
       />
 
       <LayoutBody>
