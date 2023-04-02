@@ -2,7 +2,7 @@
   "markprompt": {
     "name": "markprompt",
     "url": "https://markprompt.com",
-    "description": "Crea un chatbot a partir de ficheros markdown de forma sencilla.",
+    "description": "Crea un chatbot usando GPT-4 a partir de archivos markdown, markdoc y mdx. Es ideal para la documentación técnica de tu empresa. Se sincroniza automáticamente con GitHub o te permite subir archivos manualmente. Luego, puedes usar su componente en React para incorporarlo en tu sitio web.",
     "category": "chatbots",
     "occupations": []
   },
@@ -37,28 +37,63 @@
   "chatbase": {
     "name": "Chatbase",
     "url": "https://www.chatbase.co",
-    "description": "Entrena a ChatGPT con tus datos y agregalo en tu sitio web. Simplemente sube un documento o agrega un enlace a tu sitio web y obten un chatbot similar a ChatGPT que puede responder cualquier pregunta relacionada a los datos que le suministres.",
-    "category": "chatbots",
-    "occupations": []
-  },
-  "chatgptbot": {
-    "name": "ChatGPTBot",
-    "url": "https://twitter.com/ChatGPTBot",
-    "description": "Bot de Twitter hecho con ChatGPT. Responde tweets con ChatGPT de forma automática.",
+    "description": "Entrena a ChatGPT con tus datos y agrégalo en tu sitio web. Simplemente sube un documento o agrega un enlace a tu sitio web y obtén un chatbot similar a ChatGPT que puede responder cualquier pregunta relacionada con los datos que le suministres.",
     "category": "chatbots",
     "occupations": []
   },
   "milo": {
     "name": "milo",
     "url": "https://www.joinmilo.com",
-    "description": "Encuentra paz y tranquilidad en el caos. Un copiloto IA para los padres elaborado con GPT-4.",
+    "description": "Un copiloto IA para los padres elaborado con GPT-4.",
     "category": "paternidad",
     "occupations": []
   },
   "codesnippets": {
     "name": "codesnippets",
     "url": "https://codesnippets.ai",
-    "description": "Genera, refactoriza, debugea y documenta tus fragmentos de código con GPT3",
+    "description": "Covierte preguntas en código. Genera, refactoriza, debugea y documenta tus fragmentos de código con GPT-3",
+    "category": "programacion",
+    "occupations": []
+  },
+  "illustroke": {
+    "name": "Illustroke",
+    "url": "https://illustroke.com",
+    "description": "Genera de forma automática ilustraciones en SVG a partir de texto. Convierte tus prompts en SVG.",
+    "category": "diseno",
+    "occupations": []
+  },
+  "fabrie": {
+    "name": "Fabrie",
+    "url": "https://www.fabrie.com",
+    "description": "Espacio de trabajo para diseñadores. Fabrie es la herramienta más flexible para satisfacer los rituales de diseño de cada equipo, asegurándose de que todos estén en la misma página (literalmente).",
+    "category": "diseno",
+    "occupations": []
+  },
+  "iconifyai": {
+    "name": "IconifyAI",
+    "url": "https://www.iconifyai.com",
+    "description": "Herramienta de inteligencia artificial que te permite crear iconos profesionales para tu aplicación/sitio web en cuestión de segundos.",
+    "category": "diseno",
+    "occupations": []
+  },
+  "jamie": {
+    "name": "Jamie",
+    "url": "https://www.meetjamie.ai",
+    "description": "Tu asistente de inteligencia artificial que escribe resúmenes de reuniones por ti, para que no tengas que hacerlo.",
+    "category": "reuniones",
+    "occupations": []
+  },
+  "fathom": {
+    "name": "Fathom",
+    "url": "https://fathom.video",
+    "description": "Registra, transcribe, resalta y resume tus reuniones.",
+    "category": "reuniones",
+    "occupations": []
+  },
+  "autoregex": {
+    "name": "AutoRegex",
+    "url": "https://www.autoregex.xyz",
+    "description": "La expresiones regulares son dificiles. AutoRegex usa IA para crearlas y explicártelas.",
     "category": "programacion",
     "occupations": []
   }
