@@ -16,6 +16,7 @@ const execute = () => {
       .map((tool) => {
         captureWebsite.file(tool.url, "public".concat(tool.thumbnail), {
           launchOptions: {
+            delay: 1,
             args: ["--no-sandbox", "--disable-setuid-sandbox"],
           },
         });
