@@ -8,5 +8,14 @@ export const RepositoryButton = (props: RepositoryButton) => {
   const repo = process.env.NEXT_PUBLIC_GITHUB_REPO;
   const href = `https://github.com/${owner}/${repo}`;
 
-  return <Button as="a" href={href} leftIcon={<FiGithub />} {...props} />;
+  return (
+    <Button
+      as="a"
+      href={href}
+      leftIcon={<FiGithub />}
+      rel="noopener noreferrer nofollow"
+      target="_blank"
+      {...props}
+    />
+  );
 };

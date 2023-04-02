@@ -1,14 +1,14 @@
 import {
-  Box,
   Button,
   Flex,
   Heading,
+  Link,
   SimpleGrid,
   Stack,
   Text,
 } from "@chakra-ui/react";
-import Link from "next/link";
-import { useTranslation } from "next-i18next";
+import NextLink from "next/link";
+import { Trans, useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { NextSeo } from "next-seo";
 
@@ -69,11 +69,11 @@ const IndexPage = ({ categories, tools }: IndexPage) => {
             </SimpleGrid>
 
             <Flex justify="center">
-              <Link href="/herramientas" passHref legacyBehavior>
+              <NextLink href="/herramientas" passHref legacyBehavior>
                 <Button as="a" size="lg">
                   {t("hero.search_button")}
                 </Button>
-              </Link>
+              </NextLink>
             </Flex>
           </Stack>
 
@@ -108,7 +108,17 @@ const IndexPage = ({ categories, tools }: IndexPage) => {
               <Heading as="h3" fontSize="lg">
                 {t("seo_section.community.title")}
               </Heading>
-              <Text>{t("seo_section.community.description")}</Text>
+              <Text>
+                <Trans
+                  t={t}
+                  i18nKey="seo_section.community.description"
+                  components={{
+                    GitHubLink: (
+                      <RepositoryButton variant="link" leftIcon={null} />
+                    ),
+                  }}
+                />
+              </Text>
             </Stack>
           </SimpleGrid>
         </Stack>

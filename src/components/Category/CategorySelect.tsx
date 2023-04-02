@@ -1,6 +1,5 @@
 import { Select, SelectProps } from "@chakra-ui/react";
 import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
 import { ChangeEventHandler } from "react";
 
 import { Category } from "@/types/Category";

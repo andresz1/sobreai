@@ -30,7 +30,7 @@
     },
     "community": {
       "title": "Comunidad",
-      "description": "En nuestro sitio web, creemos en la importancia de crear una comunidad fuerte y comprometida alrededor de la Inteligencia Artificial. Es por eso que este sitio web es de código abierto y se encuentra alojado en GitHub."
+      "description": "En nuestro sitio web, creemos en la importancia de crear una comunidad fuerte y comprometida alrededor de la Inteligencia Artificial. Es por eso que este sitio web es de código abierto y se encuentra alojado en <GitHubLink>GitHub.</GitHubLink>"
     }
   }
 }
