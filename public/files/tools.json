@@ -96,5 +96,26 @@
     "description": "La expresiones regulares son dificiles. AutoRegex usa IA para crearlas y explicártelas.",
     "category": "programacion",
     "occupations": []
+  },
+  "what-the-diff": {
+    "name": "What The Diff",
+    "url": "https://whatthediff.ai",
+    "description": "Asistente con IA para revisión de código. What The Diff te ayuda a tu equipo y a ti a escribir mejores descripciones en las Pull Requests, revisarlas y mergearlas más rápidamente e incluso mantener informados a los miembros no técnicos.",
+    "category": "programacion",
+    "occupations": []
+  },
+  "hey-cli": {
+    "name": "HeyCLI",
+    "url": "https://www.heycli.com",
+    "description": "Traduce lenguaje natural a comandos para la terminal.",
+    "category": "programacion",
+    "occupations": []
+  },
+  "codeball": {
+    "name": "Codeball",
+    "url": "https://codeball.ai",
+    "description": "Encuentra bugs en tus Pull Requests de forma automática usando IA.",
+    "category": "programacion",
+    "occupations": []
   }
 }
