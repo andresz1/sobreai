@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  Descubre las últimas innovaciones en herramientas, sitios web y aplicaciones con Inteligencia Artificial
+  Descubre las últimas innovaciones en herramientas, sitios web y aplicaciones con Inteligencia Artificial 🤖
 </p>
 
 <p align="center">
