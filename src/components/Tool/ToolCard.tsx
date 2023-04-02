@@ -1,10 +1,12 @@
 import {
   AspectRatio,
+  Box,
   Heading,
   LinkBox,
   LinkBoxProps,
   LinkOverlay,
   Stack,
+  Tag,
   Text,
 } from "@chakra-ui/react";
 import Image from "next/image";
@@ -31,12 +33,23 @@ export const ToolCard = ({ tool, ...others }: ToolCardProps) => {
       {...others}
     >
       <AspectRatio ratio={128 / 80} bgColor="blackAlpha.100">
-        <Image
-          src={tool.thumbnail}
-          alt={t("card.image", { name: tool.name })}
-          objectFit="contain"
-          fill
-        />
+        <Box position="relative" w="full" h="full">
+          <Image
+            src={tool.thumbnail}
+            alt={t("card.image", { name: tool.name })}
+            objectFit="contain"
+            fill
+          />
+          <Tag
+            position="absolute"
+            bottom={3}
+            right={3}
+            borderRadius="full"
+            boxShadow="lg"
+          >
+            {tool.category.name}
+          </Tag>
+        </Box>
       </AspectRatio>
 
       <Stack as="footer" p={4}>
