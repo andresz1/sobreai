@@ -15,6 +15,10 @@
 
 SobreIA es un sitio web sobre Inteligencia Artificial, donde podrás descubrir las últimas innovaciones en aplicaciones, herramientas y sitios web creados con esta tecnología. Encontrarás información útil y relevante para aprender más sobre la IA y cómo está cambiando el mundo.
 
+## Herramientas
+
+Todos las herramientas, aplicaciones y sitios web se encuentran en un fichero en este repositorio. Para sugerir una herramienta crea un [issue](https://github.com/andresz1/sobreai/issues/new) o directamente una [Pull Request](https://github.com/andresz1/sobreai/compare). Acuerdate de seguir nuestra [guía de contribución](./CONTRIBUTING.md).
+
 ## Contribuciones
 
 ¿Te gustaría contribuir? ¡Estaría genial! Tenemos una [guía de contribución](./CONTRIBUTING.md) para ayudar a guiarte.
