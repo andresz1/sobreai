@@ -2,7 +2,15 @@
   "create_modal": {
     "title": "Sugerir herramienta",
     "close_button": "Cerrar",
-    "send_button": "Enviar"
+    "send_button": "Enviar",
+    "success": {
+      "title": "Sugerencia enviada",
+      "description": "Revisaremos tu sugerencia. Puede que tarde un tiempo en ser publicada."
+    },
+    "error": {
+      "title": "¡Ups! Algo salió mal",
+      "description": "Inténtalo otra vez en un rato."
+    }
   },
   "form": {
     "url": {

@@ -18,7 +18,7 @@ export interface ToolCardProps extends LinkBoxProps {
 }
 
 export const ToolCard = ({ tool, ...others }: ToolCardProps) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("tool");
 
   return (
     <LinkBox
@@ -33,7 +33,7 @@ export const ToolCard = ({ tool, ...others }: ToolCardProps) => {
       <AspectRatio ratio={128 / 80} bgColor="blackAlpha.100">
         <Image
           src={tool.thumbnail}
-          alt={t("image", { name: tool.name })}
+          alt={t("card.image", { name: tool.name })}
           objectFit="contain"
           fill
         />

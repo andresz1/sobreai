@@ -9,6 +9,7 @@ import {
   ModalHeader,
   ModalOverlay,
   ModalProps,
+  useToast,
 } from "@chakra-ui/react";
 import { useTranslation } from "next-i18next";
 import { useAsyncCallback } from "react-async-hook";
@@ -24,6 +25,7 @@ export const CreateToolModal = ({
   ...others
 }: CreateToolModalProps) => {
   const { t } = useTranslation("tool");
+  const toast = useToast();
   const services = useServices();
   const { execute: createTool, loading: isLoading } = useAsyncCallback(
     ({ url }: { url: string }) => {
@@ -31,7 +33,19 @@ export const CreateToolModal = ({
     },
     {
       onSuccess: () => {
+        toast({
+          title: t("create_modal.success.title"),
+          description: t("create_modal.success.description"),
+          status: "success",
+        });
         onClose();
+      },
+      onError: () => {
+        toast({
+          title: t("create_modal.error.title"),
+          description: t("create_modal.error.description"),
+          status: "error",
+        });
       },
     }
   );
