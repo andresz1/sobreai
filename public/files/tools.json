@@ -117,5 +117,26 @@
     "description": "Encuentra bugs en tus Pull Requests de forma automática usando IA.",
     "category": "programacion",
     "occupations": []
+  },
+  "chatpdf": {
+    "name": "ChatPDF",
+    "url": "https://www.chatpdf.com",
+    "description": "Sube un archivo PDF y habla con él.",
+    "category": "chatbot",
+    "occupations": []
+  },
+  "chat-thing": {
+    "name": "Chat Thing",
+    "url": "https://chatthing.ai",
+    "description": "Crea un chatbot impulsado por ChatGPT utilizando tus datos existentes de Notion, archivos, sitios web y más.",
+    "category": "chatbot",
+    "occupations": []
+  },
+  "github-copilot": {
+    "name": "GitHub Copilot",
+    "url": "https://github.com/features/copilot",
+    "description": "Sugiere código y funciones completas en tiempo real, directamente desde tu editor.",
+    "category": "programacion",
+    "occupations": []
   }
 }
