@@ -122,14 +122,14 @@
     "name": "ChatPDF",
     "url": "https://www.chatpdf.com",
     "description": "Sube un archivo PDF y habla con él.",
-    "category": "chatbot",
+    "category": "chatbots",
     "occupations": []
   },
   "chat-thing": {
     "name": "Chat Thing",
     "url": "https://chatthing.ai",
     "description": "Crea un chatbot con ChatGPT utilizando tus datos existentes de Notion, archivos, sitios web y más.",
-    "category": "chatbot",
+    "category": "chatbots",
     "occupations": []
   },
   "github-copilot": {
@@ -141,7 +141,7 @@
   },
   "dall-e-2": {
     "name": "DALL·E 2",
-    "url": "https://github.com/features/copilot",
+    "url": "https://openai.com/product/dall-e-2",
     "description": "Genera imágenes a partir de una descripción.",
     "category": "generacion-de-imagenes",
     "occupations": []
