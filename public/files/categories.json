@@ -18,5 +18,9 @@
   "reuniones": {
     "name": "Reuniones",
     "description": "Herramientas de IA para automatizar la gestión, resumen y toma de notas de reuniones."
+  },
+  "generacion-de-imagenes": {
+    "name": "Generación de Imágenes",
+    "description": "Herramientas de IA para generar imágenes a partir de texto."
   }
 }

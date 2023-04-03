@@ -128,7 +128,7 @@
   "chat-thing": {
     "name": "Chat Thing",
     "url": "https://chatthing.ai",
-    "description": "Crea un chatbot impulsado por ChatGPT utilizando tus datos existentes de Notion, archivos, sitios web y más.",
+    "description": "Crea un chatbot con ChatGPT utilizando tus datos existentes de Notion, archivos, sitios web y más.",
     "category": "chatbot",
     "occupations": []
   },
@@ -137,6 +137,55 @@
     "url": "https://github.com/features/copilot",
     "description": "Sugiere código y funciones completas en tiempo real, directamente desde tu editor.",
     "category": "programacion",
+    "occupations": []
+  },
+  "dall-e-2": {
+    "name": "DALL·E 2",
+    "url": "https://github.com/features/copilot",
+    "description": "Genera imágenes a partir de una descripción.",
+    "category": "generacion-de-imagenes",
+    "occupations": []
+  },
+  "midjourney": {
+    "name": "Midjourney",
+    "url": "https://www.midjourney.com",
+    "description": "Genera elementos visuales a partir de texto.",
+    "category": "generacion-de-imagenes",
+    "occupations": []
+  },
+  "scribble-diffusion": {
+    "name": "Scribble Diffusion",
+    "url": "https://scribblediffusion.com",
+    "description": "Transforma tus bocetos en imágenes refinadas utilizando inteligencia artificial.",
+    "category": "generacion-de-imagenes",
+    "occupations": []
+  },
+  "variart": {
+    "name": "Variart",
+    "url": "https://variart.ai",
+    "description": "Suministra una imagen y obtén una variante similar sin derechos de autor.",
+    "category": "generacion-de-imagenes",
+    "occupations": []
+  },
+  "headshotpro": {
+    "name": "HeadshotPro",
+    "url": "https://www.headshotpro.com",
+    "description": "Genera retratos corporativos profesionales para equipos remotos.",
+    "category": "generacion-de-imagenes",
+    "occupations": []
+  },
+  "photo-ai": {
+    "name": "Photo AI",
+    "url": "https://photoai.com",
+    "description": "Sube fotos, copia cualquier foto y crea una sesión de fotos en cualquier lugar.",
+    "category": "generacion-de-imagenes",
+    "occupations": []
+  },
+  "booth-ai": {
+    "name": "Booth.ai",
+    "url": "https://photoai.com",
+    "description": "Sube fotos de muestra y crea fotografías de calidad profesional con inteligencia artificial.",
+    "category": "generacion-de-imagenes",
     "occupations": []
   }
 }
