@@ -11,7 +11,7 @@ import theme from "../theme";
 
 function App({ Component, pageProps }: AppProps) {
   const url = process.env.NEXT_PUBLIC_SITE_URL;
-  const siteName = "Sobre IA";
+  const siteName = "SobreIA";
   const router = useRouter();
   const canonical = url.concat(router.asPath);
 
