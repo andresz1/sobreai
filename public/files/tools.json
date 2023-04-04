@@ -257,5 +257,33 @@
     "url": "https://www.jibewith.com",
     "category": "escritura",
     "occupations": []
+  },
+  "gocharlie": {
+    "name": "GoCharlie",
+    "description": "Escriba blogs, imágenes, videos y contenido social en segundos usando IA.",
+    "url": "https://gocharlie.ai",
+    "category": "escritura",
+    "occupations": []
+  },
+  "write-my-prd": {
+    "name": "Write My PRD",
+    "description": "Describe el problema que tu producto o servicio resuelve y genera un Documento de Requerimientos de Producto con IA.",
+    "url": "https://writemyprd.com",
+    "category": "escritura",
+    "occupations": []
+  },
+  "hoppy-copy": {
+    "name": "Hoppy Copy",
+    "description": "Genere una texto para campañas de marketing por correo electrónico, boletines y más utilizando IA.",
+    "url": "https://www.hoppycopy.co",
+    "category": "escritura",
+    "occupations": []
+  },
+  "jenni": {
+    "name": "Jenni",
+    "description": "Asistente de escritura. Mejora tu escritura con este asistente elaborado con IA.",
+    "url": "https://jenni.ai",
+    "category": "escritura",
+    "occupations": []
   }
 }
