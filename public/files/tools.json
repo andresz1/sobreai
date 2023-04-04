@@ -285,5 +285,103 @@
     "url": "https://jenni.ai",
     "category": "escritura",
     "occupations": []
+  },
+  "metavoice": {
+    "name": "Metavoice",
+    "description": "Personaliza tu identidad en línea con locuciones de IA y cambia de voz en tiempo real.",
+    "url": "https://themetavoice.xyz",
+    "category": "audio",
+    "occupations": []
+  },
+  "spotify-dj": {
+    "name": "Spotify DJ",
+    "description": "Un DJ de IA realista que ofrece una lista personalizada de música y comentarios.",
+    "url": "https://newsroom.spotify.com/2023-02-22/spotify-debuts-a-new-ai-dj-right-in-your-pocket",
+    "category": "audio",
+    "occupations": []
+  },
+  "musiclm": {
+    "name": "MusicLM",
+    "description": "Un modelo de Google que genera música de alta fidelidad a partir de descripciones de texto.",
+    "url": "https://google-research.github.io/seanet/musiclm/examples",
+    "category": "audio",
+    "occupations": []
+  },
+  "cleanvoice": {
+    "name": "Cleanvoice",
+    "description": "Elimina sonidos de relleno, tartamudeo y sonidos de boca de un audio.",
+    "url": "https://cleanvoice.ai",
+    "category": "audio",
+    "occupations": []
+  },
+  "splitter": {
+    "name": "Splitter",
+    "description": "Aísla los instrumentos de las canciones utilizando el aprendizaje automático.",
+    "url": "https://splitter.ai",
+    "category": "audio",
+    "occupations": []
+  },
+  "assemblyai": {
+    "name": "AssemblyAI",
+    "description": "Accede a modelos de IA potentes para audio a través de una API simple.",
+    "url": "https://www.assemblyai.com",
+    "category": "audio",
+    "occupations": []
+  },
+  "audyo": {
+    "name": "Audyo",
+    "description": "Convierte tu contenido escrito en audio de calidad humana en minutos.",
+    "url": "https://www.audyo.ai",
+    "category": "audio",
+    "occupations": []
+  },
+  "lalal.ai": {
+    "name": "LALAL.AI",
+    "description": "Extraiga voz, acompañamiento y varios instrumentos de cualquier audio y video.",
+    "url": "https://www.lalal.ai",
+    "category": "audio",
+    "occupations": []
+  },
+  "synth": {
+    "name": "Synth",
+    "description": "Haz cualquier pregunta sobre una reunión, obtén un resumen, conoce las tareas pendientes y las conclusiones de manera rápida y sencilla.",
+    "url": "https://www.usesynth.com",
+    "category": "reuniones",
+    "occupations": []
+  },
+  "hairstyle-ai": {
+    "name": "Hairstyle AI",
+    "description": "Genera diferentes peinados con IA y descubre cuál te queda mejor.",
+    "url": "https://www.hairstyleai.com",
+    "category": "fotos-de-perfil",
+    "occupations": []
+  },
+  "extrapolate": {
+    "name": "Extrapolate",
+    "description": "Sube una foto y descubre qué tan bien envejecerás.",
+    "url": "https://extrapolate.app",
+    "category": "fotos-de-perfil",
+    "occupations": []
+  },
+  "profile-picture-ai": {
+    "name": "Profile Picture AI",
+    "description": "Crea tus propios avatares fotorealistas con IA.",
+    "url": "https://www.profilepicture.ai",
+    "category": "fotos-de-perfil",
+    "occupations": []
+  },
+  "avatar-ai": {
+    "name": "Avatar AI",
+    "description": "Crea tus propios avatares con AI.",
+    "url": "https://avatarai.me ",
+    "category": "fotos-de-perfil",
+    "occupations": []
+  },
+  "lensa": {
+    "name": "Lensa",
+    "description": "Editor de imágenes todo en uno que lleva tus fotos al siguiente nivel.",
+    "url": "https://prisma-ai.com ",
+    "category": "fotos-de-perfil",
+    "occupations": []
   }
 }

@@ -25,6 +25,14 @@
   },
   "escritura": {
     "name": "Escritura",
-    "description": "Herramientas de AI para generación de texto."
+    "description": "Herramientas de IA para generación de texto."
+  },
+  "audio": {
+    "name": "Audio",
+    "description": "Herramientas de IA para generar o manipular audio."
+  },
+  "fotos-de-perfil": {
+    "name": "Fotos de Perfil",
+    "description": "Herramientas de IA que permiten generar fotos de perfil a partir de un conjunto de fotos. Genera avatares, fotos profesionales o mejora tus fotos de perfil con IA."
   }
 }
