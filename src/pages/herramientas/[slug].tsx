@@ -43,7 +43,7 @@ const CategoryPage = ({ categories, category, tools }: CategoryPageProps) => {
         <LayoutMain>
           <Stack spacing={8}>
             <Stack spacing={4}>
-              <Breadcrumb fontSize="xl">
+              <Breadcrumb sx={{ ol: { display: "inline" } }} fontSize="xl">
                 <BreadcrumbItem>
                   <Link href="/" passHref legacyBehavior>
                     <BreadcrumbLink>{t("breadcrumb.home")}</BreadcrumbLink>

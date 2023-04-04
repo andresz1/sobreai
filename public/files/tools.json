@@ -187,5 +187,75 @@
     "description": "Sube fotos de muestra y crea fotografías de calidad profesional con inteligencia artificial.",
     "category": "generacion-de-imagenes",
     "occupations": []
+  },
+  "crear-ai": {
+    "name": "Crear AI",
+    "description": "Crea contenido con facilidad utilizando más de 20 plantillas diferentes. Con Crear AI, podrás redactar una publicación de blog optimizada para SEO, reescribir y traducir textos, responder correos electrónicos con efectividad ¡y mucho más!",
+    "url": "https://www.crear.ai",
+    "category": "escritura",
+    "occupations": []
+  },
+  "texta": {
+    "name": "Texta",
+    "description": "Obtén contenido de alta calidad optimizado para SEO y atractivo para tu blog.",
+    "url": "https://texta.ai",
+    "category": "escritura",
+    "occupations": []
+  },
+  "writeseed": {
+    "name": "Writeseed",
+    "description": "Crea contenido optimizado para SEO para tu blog, sitio web y más de forma rápida.",
+    "url": "https://writeseed.com",
+    "category": "escritura",
+    "occupations": []
+  },
+  "elephas": {
+    "name": "Elephas",
+    "description": "El primer escritor de IA del mundo que funciona en Mac, iPhone y iPad.",
+    "url": "https://elephas.app",
+    "category": "escritura",
+    "occupations": []
+  },
+  "everylead": {
+    "name": "Everylead",
+    "description": "Escribe mensajes personalizados a posibles candidatos basados en su perfil de LinkedIn.",
+    "url": "https://www.everylead.ai",
+    "category": "escritura",
+    "occupations": []
+  },
+  "automata": {
+    "name": "Automata",
+    "description": "Reutiliza blogs y videos como publicaciones de LinkedIn, hilos de Twitter y boletines informativos.",
+    "url": "https://byautomata.io",
+    "category": "escritura",
+    "occupations": []
+  },
+  "gramara": {
+    "name": "Gramara",
+    "description": "Corrector gramatical elaborado con IA. Mejora tu gramática, dicción y estilo. Escribe inglés fluido al instante.",
+    "url": "https://gramara.com",
+    "category": "escritura",
+    "occupations": []
+  },
+  "type.ai": {
+    "name": "Type.ai",
+    "description": "Editor de documentos elaborado con IA que te ayuda a escribir mucho más rápido.",
+    "url": "https://type.ai",
+    "category": "escritura",
+    "occupations": []
+  },
+  "conversai": {
+    "name": "ConversAI",
+    "description": "Asistente hecho con IA que aprende a hablar como tú. Te permite responder en un clic y nunca quedarte sin cosas interesantes que decir.",
+    "url": "https://conversai.co",
+    "category": "escritura",
+    "occupations": []
+  },
+  "jibewith": {
+    "name": "JibeWith",
+    "description": "Escribe contenido para medios en línea de forma sencilla con IA.",
+    "url": "https://www.jibewith.com",
+    "category": "escritura",
+    "occupations": []
   }
 }

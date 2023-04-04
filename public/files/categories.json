@@ -22,5 +22,9 @@
   "generacion-de-imagenes": {
     "name": "Generación de Imágenes",
     "description": "Herramientas de IA para generar imágenes a partir de texto."
+  },
+  "escritura": {
+    "name": "Escritura",
+    "description": "Herramientas de AI para generación de texto."
   }
 }

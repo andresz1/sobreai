@@ -55,7 +55,7 @@ const ToolsDetailPage = ({ categories, tool, related }) => {
               templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
             >
               <Stack spacing={4}>
-                <Breadcrumb fontSize="xl">
+                <Breadcrumb sx={{ ol: { display: "inline" } }} fontSize="xl">
                   <BreadcrumbItem>
                     <Link href="/" passHref legacyBehavior>
                       <BreadcrumbLink>{t("breadcrumb.home")}</BreadcrumbLink>
