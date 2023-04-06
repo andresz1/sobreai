@@ -1,8 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "capture": "node node_modules/puppeteer/install.js && node ./scripts/capture.mjs",
-    "postinstall": "npm run capture",
+    "capture": "node ./scripts/capture.mjs",
+    "search": "node ./scripts/search.mjs",
+    "postinstall": "npm run capture && npm run search",
     "dev": "next",
     "build": "next build",
     "start": "next start",
@@ -35,12 +36,15 @@
     "react-hook-form": "^7.43.8",
     "react-i18next": "^12.2.0",
     "react-icons": "^4.8.0",
+    "react-instantsearch-hooks-web": "^6.42.1",
     "slugify": "^1.6.6"
   },
   "devDependencies": {
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "algoliasearch": "^4.17.0",
+    "dotenv": "^16.0.3",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "eslint-plugin-simple-import-sort": "^10.0.0",
