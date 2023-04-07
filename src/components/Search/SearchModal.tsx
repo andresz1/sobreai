@@ -2,56 +2,53 @@ import {
   Box,
   Modal,
   ModalBody,
+  ModalCloseButton,
   ModalContent,
+  ModalHeader,
   ModalOverlay,
   ModalProps,
   Stack,
 } from "@chakra-ui/react";
 import algoliasearch from "algoliasearch/lite";
+import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 import { InstantSearch } from "react-instantsearch-hooks-web";
 
-import { SearchHits } from "./SearchHits";
-import { SearchInput } from "./SearchInput";
+import { SearchComboBox } from "./SearchComboBox";
 
 export type SearchModalProps = Omit<ModalProps, "children">;
 
-const SearchModal = (props: SearchModalProps) => {
+const SearchModal = ({ onClose, ...others }: SearchModalProps) => {
+  const { t } = useTranslation("common");
+  const router = useRouter();
   const searchClient = algoliasearch(
     process.env.NEXT_PUBLIC_ALGOLIA_APP_ID,
     process.env.NEXT_PUBLIC_ALGOLIA_SEARCH_API_KEY
   );
+
+  const handleSelect = (url: string) => {
+    router.push(url);
+    onClose();
+  };
 
   return (
     <Modal
       size={{ base: "full", md: "xl" }}
       scrollBehavior="inside"
       isCentered
-      {...props}
+      onClose={onClose}
+      {...others}
     >
       <ModalOverlay />
 
       <ModalContent>
-        <ModalBody pt={0} pb={8}>
-          <InstantSearch
-            searchClient={searchClient} // this is the Algolia client
-            indexName="sobreia.com" // this is your index name
-          >
-            <Stack spacing={4}>
-              <Box
-                pt={4}
-                position="sticky"
-                top={0}
-                width="full"
-                zIndex="docked"
-                background="white"
-              >
-                <SearchInput />
-              </Box>
+        <ModalHeader>{t("search.title")}</ModalHeader>
 
-              <SearchHits />
-            </Stack>
-          </InstantSearch>
-        </ModalBody>
+        <ModalCloseButton />
+
+        <InstantSearch searchClient={searchClient} indexName="sobreia.com">
+          <SearchComboBox onSelect={handleSelect} />
+        </InstantSearch>
       </ModalContent>
     </Modal>
   );

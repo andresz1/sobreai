@@ -52,7 +52,7 @@ export const ToolCard = ({ tool, ...others }: ToolCardProps) => {
         </Box>
       </AspectRatio>
 
-      <Stack as="footer" p={4}>
+      <Stack p={4}>
         <Heading as="h3" fontSize="2xl">
           <Link href={`/herramienta/${tool.slug}`} passHref legacyBehavior>
             <LinkOverlay>{tool.name}</LinkOverlay>

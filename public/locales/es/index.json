@@ -1,24 +1,26 @@
 {
   "seo": {
     "title": "Descubre aplicaciones, herramientas y sitios web creados con Inteligencia Artificial",
-    "description": "SobreAI es una web sobre Inteligencia Artificial, donde podrás descubrir las últimas aplicaciones, herramientas y sitios web creadas con esta tecnología"
+    "description": "SobreIA es una web sobre Inteligencia Artificial, donde podrás descubrir las últimas aplicaciones, herramientas y sitios web creadas con esta tecnología"
   },
   "hero": {
     "title": "SobreIA",
     "description": "Descubre las últimas innovaciones en herramientas, sitios web y aplicaciones con Inteligencia Artificial",
     "suggest_button": "Sugerir herramienta",
-    "search_button": "Ver todas"
+    "search_button": "Ver todas",
+    "discord_button": "Suscríbete"
   },
   "tools_section": {
     "title": "Recientemente agregadas"
   },
-  "occupations_section": {
-    "title": "Para tu trabajo"
+  "community_section": {
+    "title": "Comunidad",
+    "description": "Únete a la comunidad de SobreIA. Nuestra comunidad está alojada en Discord, donde podrás mantenerte informado de las últimas herramientas y noticias sobre inteligencia artificial, interactuar, hacer preguntas y más, o contribuir con el proyecto en GitHub."
   },
   "seo_section": {
     "about": {
-      "title": "¿Qué es SobreAI?",
-      "description": "SobreAI es un sitio web sobre Inteligencia Artificial, donde podrás descubrir las últimas innovaciones en aplicaciones, herramientas y sitios web creados con esta tecnología. Encontrarás información útil y relevante para aprender más sobre la IA y cómo está cambiando el mundo."
+      "title": "¿Qué es SobreIA?",
+      "description": "SobreIA es un sitio web sobre Inteligencia Artificial, donde podrás descubrir las últimas innovaciones en aplicaciones, herramientas y sitios web creados con esta tecnología. Encontrarás información útil y relevante para aprender más sobre la IA y cómo está cambiando el mundo."
     },
     "revolution": {
       "title": "¡Únete a la revolución de la IA!",

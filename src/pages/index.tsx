@@ -1,5 +1,6 @@
 import {
   Button,
+  ButtonGroup,
   Flex,
   Heading,
   Link,
@@ -11,6 +12,7 @@ import NextLink from "next/link";
 import { Trans, useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { NextSeo } from "next-seo";
+import { FaDiscord } from "react-icons/fa";
 
 import { CategorySection } from "@/components/Category/CategorySection";
 import { LayoutFooter } from "@/components/Layout/LayoutFooter";
@@ -49,9 +51,20 @@ const IndexPage = ({ categories, tools }: IndexPage) => {
               </Text>
             </Stack>
 
-            <CreateToolButton size="lg">
-              {t("hero.suggest_button")}
-            </CreateToolButton>
+            <ButtonGroup size="lg">
+              <CreateToolButton>{t("hero.suggest_button")}</CreateToolButton>
+
+              <Button
+                variant="outline"
+                as="a"
+                href="https://discord.gg/fMWVJVcW"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                leftIcon={<FaDiscord />}
+              >
+                {t("hero.discord_button")}
+              </Button>
+            </ButtonGroup>
           </Stack>
 
           <Stack as="section" spacing={6}>
@@ -78,6 +91,31 @@ const IndexPage = ({ categories, tools }: IndexPage) => {
           </Stack>
 
           <CategorySection categories={categories} />
+
+          <Stack as="section" spacing={6}>
+            <Heading as="h2" fontSize={{ base: "2xl", md: "3xl" }}>
+              {t("community_section.title")}
+            </Heading>
+
+            <Text as="p" fontSize={{ base: "md", md: "lg" }}>
+              {t("community_section.description")}
+            </Text>
+
+            <ButtonGroup size="lg" justifyContent="center">
+              <RepositoryButton>GitHub</RepositoryButton>
+
+              <Button
+                variant="outline"
+                as="a"
+                href="https://discord.gg/fMWVJVcW"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                leftIcon={<FaDiscord />}
+              >
+                Discord
+              </Button>
+            </ButtonGroup>
+          </Stack>
 
           <SimpleGrid
             templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}

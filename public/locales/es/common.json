@@ -9,6 +9,13 @@
     "button_copy": "Copiar",
     "button_copied": "Copiado"
   },
+  "search": {
+    "title": "Buscador de herramientas",
+    "button": "Buscar herramienta",
+    "empty": "No hay resultados",
+    "input_placeholder": "Chatbot",
+    "clear_button": "Borrar búsqueda"
+  },
   "categories_section": {
     "title": "Todas las categorias"
   },
