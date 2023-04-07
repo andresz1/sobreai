@@ -29,6 +29,9 @@ const theme = extendTheme({
       },
     },
   },
+  shadows: {
+    outline: "0 0 0 3px rgba(26, 32, 44, 0.6)",
+  },
   config: {
     cssVarPrefix: "ia",
   },

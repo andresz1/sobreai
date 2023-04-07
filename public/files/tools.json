@@ -383,5 +383,215 @@
     "url": "https://prisma-ai.com ",
     "category": "fotos-de-perfil",
     "occupations": []
+  },
+  "mirage": {
+    "name": "Mirage",
+    "description": "Lienzo 3D impulsado por inteligencia artificial para que los creativos diseñen fácilmente entornos hermosos.",
+    "url": "https://www.mirageml.com",
+    "category": "3d",
+    "occupations": []
+  },
+  "make-a-video-3d": {
+    "name": "Make A Video 3D",
+    "description": "Un método para generar escenas dinámicas tridimensionales a partir de descripciones de texto.",
+    "url": "https://make-a-video3d.github.io",
+    "category": "3d",
+    "occupations": []
+  },
+  "plask": {
+    "name": "Plask",
+    "description": "Herramienta de animación mocap impulsada por inteligencia artificial para trabajar con movimiento en 3D.",
+    "url": "https://plask.ai",
+    "category": "3d",
+    "occupations": []
+  },
+  "masterpiece-studio": {
+    "name": "Masterpiece Studio",
+    "description": "Haz que la creación de 3D sea más fácil con inteligencia artificial generativa.",
+    "url": "https://masterpiecestudio.com",
+    "category": "3d",
+    "occupations": []
+  },
+  "openai-point-e": {
+    "name": "OpenAI Point-E",
+    "description": "Un sistema para generar nubes de puntos 3D a partir de indicaciones complejas.",
+    "url": "https://github.com/openai/point-e",
+    "category": "3d",
+    "occupations": []
+  },
+  "lumalabs": {
+    "name": "Lumalabs",
+    "description": "Captura y marca de tiempo en 3D utilizando inteligencia artificial.",
+    "url": "https://lumalabs.ai",
+    "category": "3d",
+    "occupations": []
+  },
+  "ttsmaker": {
+    "name": "TTSMaker",
+    "description": "TTSMaker es una herramienta gratuita de texto a voz que ofrece servicios de síntesis de voz.",
+    "url": "https://ttsmaker.com",
+    "category": "voz",
+    "occupations": []
+  },
+  "izwe": {
+    "name": "izwe",
+    "description": "Transforma datos de audio y video a texto, subtítulos o leyendas en tu idioma.",
+    "url": "https://izwe.ai",
+    "category": "voz",
+    "occupations": []
+  },
+  "gladia": {
+    "name": "Gladia",
+    "description": "Transcribe 1 hora de audio en 10 segundos con Gladia Text to Speech.",
+    "url": "https://www.gladia.io",
+    "category": "voz",
+    "occupations": []
+  },
+  "uberduck": {
+    "name": "Uberduck",
+    "description": "Comunidad de voz de inteligencia artificial de código abierto que te permite generar voces a partir de texto.",
+    "url": "https://uberduck.ai",
+    "category": "voz",
+    "occupations": []
+  },
+  "supertone": {
+    "name": "Supertone",
+    "description": "Produzca resultados hiperrealistas utilizando la tecnología de separación de voz de canto y actuación AI.",
+    "url": "https://supertone.ai",
+    "category": "voz",
+    "occupations": []
+  },
+  "murf": {
+    "name": "Murf",
+    "description": "Pasa de texto a voz con un generador de voz AI versátil.",
+    "url": "https://murf.ai",
+    "category": "voz",
+    "occupations": []
+  },
+  "coqui": {
+    "name": "Coqui",
+    "description": "Voces AI emotivas y generativas directas para videojuegos, postproducción y más.",
+    "url": "https://coqui.ai",
+    "category": "voz",
+    "occupations": []
+  },
+  "azure-speech": {
+    "name": "Azure Speech",
+    "description": "Dale vida a tus aplicaciones con voces naturales.",
+    "url": "https://azure.microsoft.com/en-us/products/cognitive-services/text-to-speech",
+    "category": "voz",
+    "occupations": []
+  },
+  "wellsaid": {
+    "name": "WellSaid",
+    "description": "Crea una narración AI atractiva y realista para todo tu contenido digital",
+    "url": "https://wellsaidlabs.com",
+    "category": "voz",
+    "occupations": []
+  },
+  "voice.ai": {
+    "name": "Voice.ai",
+    "description": "Voice.ai es un cambiador de voz en tiempo real gratuito para usar durante aplicaciones y juegos.",
+    "url": "https://voice.ai",
+    "category": "voz",
+    "occupations": []
+  },
+  "apple-audiobooks": {
+    "name": "Apple Audiobooks",
+    "description": "Narración digital de libros de audio de Apple Books.",
+    "url": "https://authors.apple.com/support/4519-digital-narration-audiobooks",
+    "category": "voz",
+    "occupations": []
+  },
+  "play.ht": {
+    "name": "Play.HT",
+    "description": "Generador de voz de texto impulsado por IA",
+    "url": "https://play.ht",
+    "category": "voz",
+    "occupations": []
+  },
+  "resemble": {
+    "name": "Resemble",
+    "description": "Genera locuciones similares a las de un ser humano en segundos.",
+    "url": "https://www.resemble.ai",
+    "category": "voz",
+    "occupations": []
+  },
+  "whisper": {
+    "name": "Whisper",
+    "description": "Una red neuronal que se acerca a la robustez y precisión del nivel humano.",
+    "url": "https://openai.com/blog/whisper",
+    "category": "voz",
+    "occupations": []
+  },
+  "powermode": {
+    "name": "PowerMode",
+    "description": "PowerMode es tu cofundador de IA que te ayudará a idear y presentar tu startup.",
+    "url": "https://powermodeai.com",
+    "category": "presentaciones",
+    "occupations": []
+  },
+  "gpt-for-slides": {
+    "name": "GPT For Slides",
+    "description": "Usa IA para generar presentaciones hermosas en segundos de forma gratuita.",
+    "url": "https://www.gptforslides.app",
+    "category": "presentaciones",
+    "occupations": []
+  },
+  "slides-ai": {
+    "name": "Slides AI",
+    "description": "Crea diapositivas profesionales y atractivas a partir de cualquier texto en poco tiempo.",
+    "url": "https://www.slidesai.io",
+    "category": "presentaciones",
+    "occupations": []
+  },
+  "chatbcg": {
+    "name": "ChatBCG",
+    "description": "ChatBCG puede generar diapositivas usando una descripción de texto.",
+    "url": "https://www.chatbcg.com ",
+    "category": "presentaciones",
+    "occupations": []
+  },
+  "tome-app": {
+    "name": "Tome app",
+    "description": "Deja de diseñar diapositivas y comienza a contar historias.",
+    "url": "https://tome.app ",
+    "category": "presentaciones",
+    "occupations": []
+  },
+  "yarnit": {
+    "name": "Yarnit",
+    "description": "Crea y diseña contenido impresionante y contextual a gran velocidad y escala utilizando inteligencia artificial.",
+    "url": "https://www.yarnit.app",
+    "category": "generacion-de-contenido",
+    "occupations": []
+  },
+  "ocoya": {
+    "name": "Ocoya",
+    "description": "Es una plataforma que te permite crear, generar automáticamente y programar contenido más rápido utilizando inteligencia artificial.",
+    "url": "https://www.ocoya.com",
+    "category": "generacion-de-contenido",
+    "occupations": []
+  },
+  "peppertype": {
+    "name": "Peppertype",
+    "description": "Es una herramienta de redacción de contenido con inteligencia artificial que crea contenido de alta conversión en segundos.",
+    "url": "https://www.peppertype.ai",
+    "category": "generacion-de-contenido",
+    "occupations": []
+  },
+  "adcreative": {
+    "name": "AdCreative",
+    "description": "Crea creatividades publicitarias y publicaciones en redes sociales enfocadas en la conversión utilizando inteligencia artificial.",
+    "url": "https://www.adcreative.ai",
+    "category": "generacion-de-contenido",
+    "occupations": []
+  },
+  "chatgpt": {
+    "name": "ChatGPT",
+    "description": "ChatGPT es un modelo que interactúa de manera conversacional elaborado con inteligencia artificial.",
+    "url": "https://openai.com/blog/chatgpt",
+    "category": "chatbots",
+    "occupations": []
   }
 }

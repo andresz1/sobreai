@@ -34,5 +34,21 @@
   "fotos-de-perfil": {
     "name": "Fotos de Perfil",
     "description": "Herramientas de IA que permiten generar fotos de perfil a partir de un conjunto de fotos. Genera avatares, fotos profesionales o mejora tus fotos de perfil con IA."
+  },
+  "3d": {
+    "name": "3D",
+    "description": "Herramientas de IA para generar o manipular objetos 3D"
+  },
+  "voz": {
+    "name": "Voz",
+    "description": "Herramientas de IA para generar o manipular voces."
+  },
+  "presentaciones": {
+    "name": "Presentaciones",
+    "description": "Herramientas de IA para generar o editar presentaciones y diapositivas."
+  },
+  "generacion-de-contenido": {
+    "name": "Generación de contenido",
+    "description": "Herramientas de IA para generar y crear contenido."
   }
 }
