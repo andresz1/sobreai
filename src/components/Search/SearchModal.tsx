@@ -23,7 +23,7 @@ import { SearchComboBox } from "./SearchComboBox";
 
 export type SearchModalProps = Omit<ModalProps, "children">;
 
-const SearchModal = ({ onClose, ...others }: SearchModalProps) => {
+const SearchModal = ({ isOpen, onClose, ...others }: SearchModalProps) => {
   const { t } = useTranslation("common");
   const router = useRouter();
   const searchClient = algoliasearch(
@@ -38,6 +38,7 @@ const SearchModal = ({ onClose, ...others }: SearchModalProps) => {
 
   return (
     <Modal
+      isOpen={isOpen}
       initialFocusRef={null}
       size={{ base: "full", md: "xl" }}
       scrollBehavior="inside"
@@ -65,8 +66,9 @@ const SearchModal = ({ onClose, ...others }: SearchModalProps) => {
             }) => (
               <>
                 <Box px={6}>
-                  <InputGroup size="lg" variant="flushed">
+                  <InputGroup size="lg" variant="outline">
                     <Input
+                      key={isOpen}
                       autoFocus
                       placeholder={t("search.input_placeholder")}
                       {...getInputProps()}

@@ -1,7 +1,15 @@
-import { Container, ContainerProps } from "@chakra-ui/layout";
+import { Box, BoxProps } from "@chakra-ui/layout";
 
-export type LayoutContainerProps = ContainerProps;
+export type LayoutContainerProps = BoxProps;
 
 export const LayoutContainer = (props: LayoutContainerProps) => (
-  <Container maxW="container.xl" {...props} />
+  <Box
+    w="full"
+    ml="auto"
+    mr="auto"
+    maxW="container.xl"
+    px={4}
+    boxSizing="border-box"
+    {...props}
+  />
 );

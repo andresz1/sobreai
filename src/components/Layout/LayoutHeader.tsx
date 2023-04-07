@@ -9,6 +9,7 @@ import { LayoutContainer } from "./LayoutContainer";
 export const LayoutHeader = () => {
   return (
     <Stack
+      as="header"
       position="fixed"
       top={0}
       w="full"
@@ -17,6 +18,7 @@ export const LayoutHeader = () => {
       backdropFilter="auto"
       backdropBlur="12px"
       boxShadow="xs"
+      boxSizing="content-box"
       zIndex="docked"
     >
       <LayoutContainer>
