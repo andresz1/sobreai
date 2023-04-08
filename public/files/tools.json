@@ -870,5 +870,77 @@
     "category": "video",
     "pricing": "freemium",
     "occupations": []
+  },
+  "arcwise": {
+    "name": "Arcwise",
+    "description": "Tu copiloto para Google Sheets. Comprende, limpia e ingiere datos en Sheets al instante con la IA detrás de ChatGPT.",
+    "url": "https://arcwise.app/ai",
+    "category": "excel",
+    "pricing": "gratis",
+    "occupations": []
+  },
+  "charm": {
+    "name": "Charm",
+    "description": "Charm puede generar, transformar y analizar cualquier dato de texto en Google Sheets.",
+    "url": "https://charm.shubhro.com",
+    "category": "excel",
+    "pricing": "prueba-gratis",
+    "occupations": []
+  },
+  "jeeves": {
+    "name": "Jeeves",
+    "description": "Haz preguntas y obtén respuestas sin usar fórmulas en las hojas de cálculo.",
+    "url": "https://www.therocketbrew.com",
+    "category": "excel",
+    "pricing": "gratis",
+    "occupations": []
+  },
+  "excelformulabot": {
+    "name": "Excelformulabot",
+    "description": "Transforma tus instrucciones de texto en fórmulas de Excel en segundos.",
+    "url": "https://excelformulabot.com",
+    "category": "excel",
+    "pricing": "freemium",
+    "occupations": []
+  },
+  "sheetplus": {
+    "name": "SheetPlus",
+    "description": "Escribe fórmulas de Google Sheets y Excel más rápido con la ayuda de la IA.",
+    "url": "https://sheetplus.ai",
+    "category": "excel",
+    "pricing": "freemium",
+    "occupations": []
+  },
+  "neuralformula": {
+    "name": "NeuralFormula",
+    "description": "Potencia tus hojas de cálculo con inteligencia artificial.",
+    "url": "https://www.neuralformula.com",
+    "category": "excel",
+    "pricing": "freemium",
+    "occupations": []
+  },
+  "formula-god": {
+    "name": "Formula God",
+    "description": "Habla con tus hojas de cálculo empleando una inteligencia artificial integrada.",
+    "url": "https://www.formulagod.ai",
+    "category": "excel",
+    "waiting": true,
+    "occupations": []
+  },
+  "sheetai": {
+    "name": "SheetAI",
+    "description": "Desbloquea el poder de la IA en tus hojas de cálculo con SheetAI.",
+    "url": "https://www.sheetai.app",
+    "category": "excel",
+    "pricing": "freemium",
+    "occupations": []
+  },
+  "sheetgod": {
+    "name": "SheetGod",
+    "description": "Herramienta de IA que convierte inglés en fórmulas de Excel en segundos.",
+    "url": "https://www.boloforms.com/sheetgod",
+    "category": "excel",
+    "pricing": "prueba-gratis",
+    "occupations": []
   }
 }

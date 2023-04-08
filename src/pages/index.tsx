@@ -10,14 +10,13 @@ import NextLink from "next/link";
 import { Trans, useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { NextSeo } from "next-seo";
-import { FaDiscord } from "react-icons/fa";
+import { RxDiscordLogo } from "react-icons/rx";
 
 import { CategorySection } from "@/components/Category/CategorySection";
 import { LayoutFooter } from "@/components/Layout/LayoutFooter";
 import { LayoutHeader } from "@/components/Layout/LayoutHeader";
 import { LayoutMain } from "@/components/Layout/LayoutMain";
 import { RepositoryButton } from "@/components/Shared/RepositoryButton";
-import { CreateToolButton } from "@/components/Tool/CreateToolButton";
 import { ToolCard } from "@/components/Tool/ToolCard";
 import { createExtractors } from "@/server/extractors";
 import { Category } from "@/types/Category";
@@ -63,7 +62,7 @@ const IndexPage = ({ categories, tools }: IndexPage) => {
                 href="https://discord.gg/fMWVJVcW"
                 rel="noopener noreferrer nofollow"
                 target="_blank"
-                leftIcon={<FaDiscord />}
+                leftIcon={<RxDiscordLogo />}
               >
                 {t("hero.discord_button")}
               </Button>
@@ -85,9 +84,11 @@ const IndexPage = ({ categories, tools }: IndexPage) => {
             </SimpleGrid>
 
             <Flex justify="center">
-              <CreateToolButton size="lg">
-                {t("hero.suggest_button")}
-              </CreateToolButton>
+              <NextLink href="/herramientas" passHref legacyBehavior>
+                <Button as="a" size="lg">
+                  {t("tools_section.search_button")}
+                </Button>
+              </NextLink>
             </Flex>
           </Stack>
 
@@ -108,6 +109,7 @@ const IndexPage = ({ categories, tools }: IndexPage) => {
               <Heading as="h3" fontSize="lg">
                 {t("seo_section.revolution.title")}
               </Heading>
+
               <Text>{t("seo_section.revolution.description")}</Text>
             </Stack>
 

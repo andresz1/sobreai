@@ -9,6 +9,17 @@
     "button_copy": "Copiar",
     "button_copied": "Copiado"
   },
+  "header": {
+    "suggest_button": "Sugerir"
+  },
+  "drawer": {
+    "home": "Inicio",
+    "tools": "Herramientas",
+    "button": "Menu",
+    "github": "Contribuye",
+    "discord": "Suscríbete",
+    "suggest_button": "Sugerir"
+  },
   "search": {
     "title": "Buscador de herramientas",
     "button": "Buscar herramienta",

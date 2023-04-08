@@ -1,12 +1,17 @@
-import { Link, Stack, Text } from "@chakra-ui/react";
+import { Link, Stack } from "@chakra-ui/react";
 import NextLink from "next/link";
+import { useTranslation } from "next-i18next";
 
 import { SearchButton } from "@/components/Search/SearchButton";
 import { Logo } from "@/components/Shared/Logo";
 
+import { CreateToolButton } from "../Tool/CreateToolButton";
 import { LayoutContainer } from "./LayoutContainer";
+import { LayoutDrawerButton } from "./LayoutDrawerButton";
 
 export const LayoutHeader = () => {
+  const { t } = useTranslation("common");
+
   return (
     <Stack
       as="header"
@@ -22,7 +27,7 @@ export const LayoutHeader = () => {
       zIndex="docked"
     >
       <LayoutContainer>
-        <Stack direction="row" alignItems="center" spacing={4}>
+        <Stack direction="row" alignItems="center" spacing={3}>
           <NextLink href="/">
             <Logo color="black" w={8} h={8} />
           </NextLink>
@@ -38,6 +43,12 @@ export const LayoutHeader = () => {
           </NextLink>
 
           <SearchButton />
+
+          <CreateToolButton display={{ base: "none", md: "flex" }} size="md">
+            {t("header.suggest_button")}
+          </CreateToolButton>
+
+          <LayoutDrawerButton variant="ghost" aria-label={t("drawer.button")} />
         </Stack>
       </LayoutContainer>
     </Stack>

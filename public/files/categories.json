@@ -58,5 +58,9 @@
   "video": {
     "name": "Video",
     "description": "Herramientas de IA para generar o editar videos."
+  },
+  "excel": {
+    "name": "Excel",
+    "description": "Herramientas de IA para optimizar tu trabajo en hojas de cálculo y crear fórmulas de Excel de forma efectiva."
   }
 }
