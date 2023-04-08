@@ -10,8 +10,15 @@
   },
   "description_section": {
     "title": "Descripción",
-    "share_button": "Compartir",
-    "link": "Visitar"
+    "link": "Visitar",
+    "pricing": "{{ pricing }}",
+    "status_waiting": "En lista de espera",
+    "status_ready": "Lista para ser usada"
+  },
+  "share": {
+    "title": "{{name}}",
+    "text": "Esto te puede interesar: {{name}}",
+    "button": "Compartir {{name}}"
   },
   "related_section": {
     "title": "Herramientas relacionadas"

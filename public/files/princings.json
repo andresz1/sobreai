@@ -1,0 +1,17 @@
+{
+  "gratis": {
+    "name": "Gratis"
+  },
+  "freemium": {
+    "name": "Freemium"
+  },
+  "prueba-gratis": {
+    "name": "Prueba gratis"
+  },
+  "pago": {
+    "name": "Pago"
+  },
+  "contactar": {
+    "name": "Contactar"
+  }
+}

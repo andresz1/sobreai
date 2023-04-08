@@ -6,6 +6,9 @@ import {
   Button,
   ButtonGroup,
   Heading,
+  List,
+  ListIcon,
+  ListItem,
   SimpleGrid,
   Stack,
   Text,
@@ -15,6 +18,7 @@ import Link from "next/link";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { NextSeo } from "next-seo";
+import { FiActivity, FiDollarSign } from "react-icons/fi";
 
 import { CategorySection } from "@/components/Category/CategorySection";
 import { LayoutBody } from "@/components/Layout/LayoutBody";
@@ -107,11 +111,30 @@ const ToolsDetailPage = ({ categories, tool, related }) => {
 
                 <Text fontSize="xl">{tool.description}</Text>
 
+                <List spacing={3} fontSize="xl">
+                  <ListItem>
+                    <ListIcon as={FiActivity} fontSize="2xl" />
+                    {tool.waiting
+                      ? t("description_section.status_waiting")
+                      : t("description_section.status_ready")}
+                  </ListItem>
+
+                  {tool.pricing && (
+                    <ListItem>
+                      <ListIcon as={FiDollarSign} fontSize="2xl" />
+
+                      {t("description_section.pricing", {
+                        pricing: tool.pricing.name,
+                      })}
+                    </ListItem>
+                  )}
+                </List>
+
                 <ButtonGroup size="lg" justifyContent="center">
                   <ShareIconButton
-                    title={t("share.title")}
-                    text={t("share.text")}
-                    aria-label={t("description_section.share_button")}
+                    title={t("share.title", { name: tool.name })}
+                    text={t("share.text", { name: tool.name })}
+                    aria-label={t("share.button", { name: tool.name })}
                   />
 
                   <Button

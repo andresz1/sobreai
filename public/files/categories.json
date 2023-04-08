@@ -50,5 +50,13 @@
   "generacion-de-contenido": {
     "name": "Generación de contenido",
     "description": "Herramientas de IA para generar y crear contenido."
+  },
+  "desarrollo-de-videojuegos": {
+    "name": "Desarrollo de videojuegos",
+    "description": "Herramientas de IA para acelerar el flujo de trabajo y optimizar la productividad del desarrollo de videojuegos."
+  },
+  "video": {
+    "name": "Video",
+    "description": "Herramientas de IA para generar o editar videos."
   }
 }

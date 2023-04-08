@@ -50,9 +50,11 @@ const IndexPage = ({ categories, tools }: IndexPage) => {
             </Stack>
 
             <Stack direction={{ base: "column", md: "row" }}>
-              <CreateToolButton size="lg">
-                {t("hero.suggest_button")}
-              </CreateToolButton>
+              <NextLink href="/herramientas" passHref legacyBehavior>
+                <Button as="a" size="lg">
+                  {t("hero.search_button")}
+                </Button>
+              </NextLink>
 
               <Button
                 variant="outline"
@@ -83,11 +85,9 @@ const IndexPage = ({ categories, tools }: IndexPage) => {
             </SimpleGrid>
 
             <Flex justify="center">
-              <NextLink href="/herramientas" passHref legacyBehavior>
-                <Button as="a" size="lg">
-                  {t("hero.search_button")}
-                </Button>
-              </NextLink>
+              <CreateToolButton size="lg">
+                {t("hero.suggest_button")}
+              </CreateToolButton>
             </Flex>
           </Stack>
 

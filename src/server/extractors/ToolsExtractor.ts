@@ -26,12 +26,19 @@ export class ToolsExtractor {
         "utf-8"
       )
     );
+    const princings = JSON.parse(
+      fs.readFileSync(
+        path.join(process.cwd(), "public/files/princings.json"),
+        "utf-8"
+      )
+    );
 
     return Object.keys(tools)
       .filter((slug) => !category || tools[slug].category === category)
       .map((slug) => {
         const tool = tools[slug];
         const category = categories[tool.category];
+        const pricing = tool.pricing && princings[tool.pricing];
         const thumbnail = `/images/captures/${slug}.png`;
 
         return {
@@ -41,6 +48,7 @@ export class ToolsExtractor {
             ...category,
             slug: tool.category,
           },
+          ...(pricing && { pricing: { ...pricing, slug: tool.pricing } }),
           occupations: tool.occupations.map((slug) => ({
             ...occupations[slug],
             slug,

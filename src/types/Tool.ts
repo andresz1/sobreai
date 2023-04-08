@@ -1,4 +1,5 @@
 import { Category } from "./Category";
+import { Pricing } from "./Princing";
 
 export interface Tool {
   name: string;
@@ -6,5 +7,7 @@ export interface Tool {
   thumbnail: string;
   url: string;
   slug: string;
+  waiting: true;
   category: Omit<Category, "tools">;
+  pricing?: Pricing;
 }

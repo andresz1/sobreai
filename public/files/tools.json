@@ -4,6 +4,7 @@
     "url": "https://markprompt.com",
     "description": "Crea un chatbot usando GPT-4 a partir de archivos markdown, markdoc y mdx. Es ideal para la documentación técnica de tu empresa. Se sincroniza automáticamente con GitHub o te permite subir archivos manualmente. Luego, puedes usar su componente en React para incorporarlo en tu sitio web.",
     "category": "chatbots",
+    "pricing": "freemium",
     "occupations": []
   },
   "macgpt": {
@@ -11,6 +12,7 @@
     "url": "https://www.macgpt.com",
     "description": "Accede desde donde sea a ChatGPT en tu Mac y úsalo incluso en campos de texto.",
     "category": "chatbots",
+    "pricing": "gratis",
     "occupations": []
   },
   "promptitude": {
@@ -18,6 +20,7 @@
     "url": "https://promptitude.io",
     "description": "La forma más sencilla y rápida de integrar GPT en tus aplicaciones y flujos de trabajo.",
     "category": "chatbots",
+    "pricing": "freemium",
     "occupations": []
   },
   "ingestai": {
@@ -25,6 +28,7 @@
     "url": "https://ingestai.io",
     "description": "Chatea con cualquier documento usando GPT. Lo podrás usar en tu aplicación de chat favorita o incluirlo en tu sitio web sin código de forma sencilla y rápida.",
     "category": "chatbots",
+    "pricing": "freemium",
     "occupations": []
   },
   "siteguide": {
@@ -32,6 +36,7 @@
     "url": "https://siteguide.ai",
     "description": "Facilita la interacción con los usuarios de tu sitio web a través de SiteGuide, una herramienta que aprende automáticamente de tu contenido para proporcionar respuestas precisas a cualquier pregunta. Con SiteGuide, tus usuarios podrán navegar por tu sitio web de manera intuitiva y obtener la información que necesitan de forma rápida y eficiente.",
     "category": "chatbots",
+    "pricing": "freemium",
     "occupations": []
   },
   "chatbase": {
@@ -39,6 +44,7 @@
     "url": "https://www.chatbase.co",
     "description": "Entrena a ChatGPT con tus datos y agrégalo en tu sitio web. Simplemente sube un documento o agrega un enlace a tu sitio web y obtén un chatbot similar a ChatGPT que puede responder cualquier pregunta relacionada con los datos que le suministres.",
     "category": "chatbots",
+    "pricing": "freemium",
     "occupations": []
   },
   "milo": {
@@ -46,13 +52,15 @@
     "url": "https://www.joinmilo.com",
     "description": "Un copiloto IA para los padres elaborado con GPT-4.",
     "category": "paternidad",
-    "occupations": []
+    "occupations": [],
+    "waiting": true
   },
   "codesnippets": {
     "name": "codesnippets",
     "url": "https://codesnippets.ai",
     "description": "Covierte preguntas en código. Genera, refactoriza, debugea y documenta tus fragmentos de código con GPT-3",
     "category": "programacion",
+    "pricing": "freemium",
     "occupations": []
   },
   "illustroke": {
@@ -60,6 +68,7 @@
     "url": "https://illustroke.com",
     "description": "Genera de forma automática ilustraciones en SVG a partir de texto. Convierte tus prompts en SVG.",
     "category": "diseno",
+    "pricing": "freemium",
     "occupations": []
   },
   "fabrie": {
@@ -67,6 +76,7 @@
     "url": "https://www.fabrie.com",
     "description": "Espacio de trabajo para diseñadores. Fabrie es la herramienta más flexible para satisfacer los rituales de diseño de cada equipo, asegurándose de que todos estén en la misma página (literalmente).",
     "category": "diseno",
+    "pricing": "prueba-gratis",
     "occupations": []
   },
   "iconifyai": {
@@ -74,6 +84,7 @@
     "url": "https://www.iconifyai.com",
     "description": "Herramienta de inteligencia artificial que te permite crear iconos profesionales para tu aplicación/sitio web en cuestión de segundos.",
     "category": "diseno",
+    "pricing": "pago",
     "occupations": []
   },
   "jamie": {
@@ -81,13 +92,15 @@
     "url": "https://www.meetjamie.ai",
     "description": "Tu asistente de inteligencia artificial que escribe resúmenes de reuniones por ti, para que no tengas que hacerlo.",
     "category": "reuniones",
-    "occupations": []
+    "occupations": [],
+    "waiting": true
   },
   "fathom": {
     "name": "Fathom",
     "url": "https://fathom.video",
     "description": "Registra, transcribe, resalta y resume tus reuniones.",
     "category": "reuniones",
+    "pricing": "gratis",
     "occupations": []
   },
   "autoregex": {
@@ -95,13 +108,15 @@
     "url": "https://www.autoregex.xyz",
     "description": "La expresiones regulares son dificiles. AutoRegex usa IA para crearlas y explicártelas.",
     "category": "programacion",
+    "pricing": "freemium",
     "occupations": []
   },
   "what-the-diff": {
     "name": "What The Diff",
     "url": "https://whatthediff.ai",
-    "description": "Asistente con IA para revisión de código. What The Diff te ayuda a tu equipo y a ti a escribir mejores descripciones en las Pull Requests, revisarlas y mergearlas más rápidamente e incluso mantener informados a los miembros no técnicos.",
+    "description": "Asistente con IA para revisión de código. What The Diff te ayuda a tu equipo y a ti a escribir mejores descriptiones en las Pull Requests, revisarlas y mergearlas más rápidamente e incluso mantener informados a los miembros no técnicos.",
     "category": "programacion",
+    "pricing": "freemium",
     "occupations": []
   },
   "hey-cli": {
@@ -109,6 +124,7 @@
     "url": "https://www.heycli.com",
     "description": "Traduce lenguaje natural a comandos para la terminal.",
     "category": "programacion",
+    "pricing": "gratis",
     "occupations": []
   },
   "codeball": {
@@ -116,6 +132,7 @@
     "url": "https://codeball.ai",
     "description": "Encuentra bugs en tus Pull Requests de forma automática usando IA.",
     "category": "programacion",
+    "pricing": "freemium",
     "occupations": []
   },
   "chatpdf": {
@@ -123,6 +140,7 @@
     "url": "https://www.chatpdf.com",
     "description": "Sube un archivo PDF y habla con él.",
     "category": "chatbots",
+    "pricing": "freemium",
     "occupations": []
   },
   "chat-thing": {
@@ -130,6 +148,7 @@
     "url": "https://chatthing.ai",
     "description": "Crea un chatbot con ChatGPT utilizando tus datos existentes de Notion, archivos, sitios web y más.",
     "category": "chatbots",
+    "pricing": "prueba-gratis",
     "occupations": []
   },
   "github-copilot": {
@@ -137,6 +156,7 @@
     "url": "https://github.com/features/copilot",
     "description": "Sugiere código y funciones completas en tiempo real, directamente desde tu editor.",
     "category": "programacion",
+    "pricing": "pago",
     "occupations": []
   },
   "dall-e-2": {
@@ -144,6 +164,7 @@
     "url": "https://openai.com/product/dall-e-2",
     "description": "Genera imágenes a partir de una descripción.",
     "category": "generacion-de-imagenes",
+    "pricing": "freemium",
     "occupations": []
   },
   "midjourney": {
@@ -151,6 +172,7 @@
     "url": "https://www.midjourney.com",
     "description": "Genera elementos visuales a partir de texto.",
     "category": "generacion-de-imagenes",
+    "pricing": "freemium",
     "occupations": []
   },
   "scribble-diffusion": {
@@ -158,6 +180,7 @@
     "url": "https://scribblediffusion.com",
     "description": "Transforma tus bocetos en imágenes refinadas utilizando inteligencia artificial.",
     "category": "generacion-de-imagenes",
+    "pricing": "gratis",
     "occupations": []
   },
   "variart": {
@@ -165,6 +188,7 @@
     "url": "https://variart.ai",
     "description": "Suministra una imagen y obtén una variante similar sin derechos de autor.",
     "category": "generacion-de-imagenes",
+    "pricing": "pago",
     "occupations": []
   },
   "headshotpro": {
@@ -172,6 +196,7 @@
     "url": "https://www.headshotpro.com",
     "description": "Genera retratos corporativos profesionales para equipos remotos.",
     "category": "generacion-de-imagenes",
+    "pricing": "pago",
     "occupations": []
   },
   "photo-ai": {
@@ -179,6 +204,7 @@
     "url": "https://photoai.com",
     "description": "Sube fotos, copia cualquier foto y crea una sesión de fotos en cualquier lugar.",
     "category": "generacion-de-imagenes",
+    "pricing": "freemium",
     "occupations": []
   },
   "booth-ai": {
@@ -186,6 +212,7 @@
     "url": "https://www.booth.ai",
     "description": "Sube fotos de muestra y crea fotografías de calidad profesional con inteligencia artificial.",
     "category": "generacion-de-imagenes",
+    "pricing": "prueba-gratis",
     "occupations": []
   },
   "crear-ai": {
@@ -193,6 +220,7 @@
     "description": "Crea contenido con facilidad utilizando más de 20 plantillas diferentes. Con Crear AI, podrás redactar una publicación de blog optimizada para SEO, reescribir y traducir textos, responder correos electrónicos con efectividad ¡y mucho más!",
     "url": "https://www.crear.ai",
     "category": "escritura",
+    "pricing": "freemium",
     "occupations": []
   },
   "texta": {
@@ -200,6 +228,7 @@
     "description": "Obtén contenido de alta calidad optimizado para SEO y atractivo para tu blog.",
     "url": "https://texta.ai",
     "category": "escritura",
+    "pricing": "prueba-gratis",
     "occupations": []
   },
   "writeseed": {
@@ -207,6 +236,7 @@
     "description": "Crea contenido optimizado para SEO para tu blog, sitio web y más de forma rápida.",
     "url": "https://writeseed.com",
     "category": "escritura",
+    "pricing": "prueba-gratis",
     "occupations": []
   },
   "elephas": {
@@ -214,6 +244,7 @@
     "description": "El primer escritor de IA del mundo que funciona en Mac, iPhone y iPad.",
     "url": "https://elephas.app",
     "category": "escritura",
+    "pricing": "prueba-gratis",
     "occupations": []
   },
   "everylead": {
@@ -221,6 +252,7 @@
     "description": "Escribe mensajes personalizados a posibles candidatos basados en su perfil de LinkedIn.",
     "url": "https://www.everylead.ai",
     "category": "escritura",
+    "pricing": "freemium",
     "occupations": []
   },
   "automata": {
@@ -228,6 +260,7 @@
     "description": "Reutiliza blogs y videos como publicaciones de LinkedIn, hilos de Twitter y boletines informativos.",
     "url": "https://byautomata.io",
     "category": "escritura",
+    "pricing": "prueba-gratis",
     "occupations": []
   },
   "gramara": {
@@ -235,6 +268,7 @@
     "description": "Corrector gramatical elaborado con IA. Mejora tu gramática, dicción y estilo. Escribe inglés fluido al instante.",
     "url": "https://gramara.com",
     "category": "escritura",
+    "pricing": "gratis",
     "occupations": []
   },
   "type.ai": {
@@ -242,6 +276,7 @@
     "description": "Editor de documentos elaborado con IA que te ayuda a escribir mucho más rápido.",
     "url": "https://type.ai",
     "category": "escritura",
+    "pricing": "freemium",
     "occupations": []
   },
   "conversai": {
@@ -249,6 +284,7 @@
     "description": "Asistente hecho con IA que aprende a hablar como tú. Te permite responder en un clic y nunca quedarte sin cosas interesantes que decir.",
     "url": "https://conversai.co",
     "category": "escritura",
+    "pricing": "pago",
     "occupations": []
   },
   "jibewith": {
@@ -256,13 +292,15 @@
     "description": "Escribe contenido para medios en línea de forma sencilla con IA.",
     "url": "https://www.jibewith.com",
     "category": "escritura",
+    "pricing": "freemium",
     "occupations": []
   },
   "gocharlie": {
     "name": "GoCharlie",
-    "description": "Escriba blogs, imágenes, videos y contenido social en segundos usando IA.",
+    "description": "Escribe blogs, imágenes, videos y contenido social en segundos usando IA.",
     "url": "https://gocharlie.ai",
     "category": "escritura",
+    "pricing": "freemium",
     "occupations": []
   },
   "write-my-prd": {
@@ -270,6 +308,7 @@
     "description": "Describe el problema que tu producto o servicio resuelve y genera un Documento de Requerimientos de Producto con IA.",
     "url": "https://writemyprd.com",
     "category": "escritura",
+    "pricing": "gratis",
     "occupations": []
   },
   "hoppy-copy": {
@@ -277,6 +316,7 @@
     "description": "Genere una texto para campañas de marketing por correo electrónico, boletines y más utilizando IA.",
     "url": "https://www.hoppycopy.co",
     "category": "escritura",
+    "pricing": "prueba-gratis",
     "occupations": []
   },
   "jenni": {
@@ -284,6 +324,7 @@
     "description": "Asistente de escritura. Mejora tu escritura con este asistente elaborado con IA.",
     "url": "https://jenni.ai",
     "category": "escritura",
+    "pricing": "prueba-gratis",
     "occupations": []
   },
   "metavoice": {
@@ -291,6 +332,7 @@
     "description": "Personaliza tu identidad en línea con locuciones de IA y cambia de voz en tiempo real.",
     "url": "https://themetavoice.xyz",
     "category": "audio",
+    "pricing": "freemium",
     "occupations": []
   },
   "spotify-dj": {
@@ -298,13 +340,15 @@
     "description": "Un DJ de IA realista que ofrece una lista personalizada de música y comentarios.",
     "url": "https://newsroom.spotify.com/2023-02-22/spotify-debuts-a-new-ai-dj-right-in-your-pocket",
     "category": "audio",
+    "pricing": "pago",
     "occupations": []
   },
   "musiclm": {
     "name": "MusicLM",
-    "description": "Un modelo de Google que genera música de alta fidelidad a partir de descripciones de texto.",
+    "description": "Un modelo de Google que genera música de alta fidelidad a partir de descriptiones de texto.",
     "url": "https://google-research.github.io/seanet/musiclm/examples",
     "category": "audio",
+    "pricing": "gratis",
     "occupations": []
   },
   "cleanvoice": {
@@ -312,6 +356,7 @@
     "description": "Elimina sonidos de relleno, tartamudeo y sonidos de boca de un audio.",
     "url": "https://cleanvoice.ai",
     "category": "audio",
+    "pricing": "prueba-gratis",
     "occupations": []
   },
   "splitter": {
@@ -319,6 +364,7 @@
     "description": "Aísla los instrumentos de las canciones utilizando el aprendizaje automático.",
     "url": "https://splitter.ai",
     "category": "audio",
+    "pricing": "freemium",
     "occupations": []
   },
   "assemblyai": {
@@ -326,6 +372,7 @@
     "description": "Accede a modelos de IA potentes para audio a través de una API simple.",
     "url": "https://www.assemblyai.com",
     "category": "audio",
+    "pricing": "pago",
     "occupations": []
   },
   "audyo": {
@@ -333,6 +380,7 @@
     "description": "Convierte tu contenido escrito en audio de calidad humana en minutos.",
     "url": "https://www.audyo.ai",
     "category": "audio",
+    "pricing": "freemium",
     "occupations": []
   },
   "lalal.ai": {
@@ -340,6 +388,7 @@
     "description": "Extraiga voz, acompañamiento y varios instrumentos de cualquier audio y video.",
     "url": "https://www.lalal.ai",
     "category": "audio",
+    "pricing": "freemium",
     "occupations": []
   },
   "synth": {
@@ -347,6 +396,7 @@
     "description": "Haz cualquier pregunta sobre una reunión, obtén un resumen, conoce las tareas pendientes y las conclusiones de manera rápida y sencilla.",
     "url": "https://www.usesynth.com",
     "category": "reuniones",
+    "pricing": "freemium",
     "occupations": []
   },
   "hairstyle-ai": {
@@ -354,6 +404,7 @@
     "description": "Genera diferentes peinados con IA y descubre cuál te queda mejor.",
     "url": "https://www.hairstyleai.com",
     "category": "fotos-de-perfil",
+    "pricing": "pago",
     "occupations": []
   },
   "extrapolate": {
@@ -361,6 +412,7 @@
     "description": "Sube una foto y descubre qué tan bien envejecerás.",
     "url": "https://extrapolate.app",
     "category": "fotos-de-perfil",
+    "pricing": "free",
     "occupations": []
   },
   "profile-picture-ai": {
@@ -368,20 +420,23 @@
     "description": "Crea tus propios avatares fotorealistas con IA.",
     "url": "https://www.profilepicture.ai",
     "category": "fotos-de-perfil",
+    "pricing": "pago",
     "occupations": []
   },
   "avatar-ai": {
     "name": "Avatar AI",
     "description": "Crea tus propios avatares con AI.",
-    "url": "https://avatarai.me ",
+    "url": "https://avatarai.me",
     "category": "fotos-de-perfil",
+    "pricing": "pago",
     "occupations": []
   },
   "lensa": {
     "name": "Lensa",
     "description": "Editor de imágenes todo en uno que lleva tus fotos al siguiente nivel.",
-    "url": "https://prisma-ai.com ",
+    "url": "https://prisma-ai.com/lensa",
     "category": "fotos-de-perfil",
+    "pricing": "pago",
     "occupations": []
   },
   "mirage": {
@@ -389,13 +444,15 @@
     "description": "Lienzo 3D impulsado por inteligencia artificial para que los creativos diseñen fácilmente entornos hermosos.",
     "url": "https://www.mirageml.com",
     "category": "3d",
+    "pricing": "freemium",
     "occupations": []
   },
   "make-a-video-3d": {
     "name": "Make A Video 3D",
-    "description": "Un método para generar escenas dinámicas tridimensionales a partir de descripciones de texto.",
+    "description": "Un método para generar escenas dinámicas tridimensionales a partir de descriptiones de texto.",
     "url": "https://make-a-video3d.github.io",
     "category": "3d",
+    "pricing": "gratis",
     "occupations": []
   },
   "plask": {
@@ -403,6 +460,7 @@
     "description": "Herramienta de animación mocap impulsada por inteligencia artificial para trabajar con movimiento en 3D.",
     "url": "https://plask.ai",
     "category": "3d",
+    "pricing": "freemium",
     "occupations": []
   },
   "masterpiece-studio": {
@@ -410,20 +468,23 @@
     "description": "Haz que la creación de 3D sea más fácil con inteligencia artificial generativa.",
     "url": "https://masterpiecestudio.com",
     "category": "3d",
-    "occupations": []
+    "occupations": [],
+    "waiting": true
   },
   "openai-point-e": {
     "name": "OpenAI Point-E",
     "description": "Un sistema para generar nubes de puntos 3D a partir de indicaciones complejas.",
     "url": "https://github.com/openai/point-e",
     "category": "3d",
+    "pricing": "gratis",
     "occupations": []
   },
   "lumalabs": {
-    "name": "Lumalabs",
+    "name": "Luma AI",
     "description": "Captura y marca de tiempo en 3D utilizando inteligencia artificial.",
     "url": "https://lumalabs.ai",
     "category": "3d",
+    "pricing": "gratis",
     "occupations": []
   },
   "ttsmaker": {
@@ -431,6 +492,7 @@
     "description": "TTSMaker es una herramienta gratuita de texto a voz que ofrece servicios de síntesis de voz.",
     "url": "https://ttsmaker.com",
     "category": "voz",
+    "pricing": "gratis",
     "occupations": []
   },
   "izwe": {
@@ -438,6 +500,7 @@
     "description": "Transforma datos de audio y video a texto, subtítulos o leyendas en tu idioma.",
     "url": "https://izwe.ai",
     "category": "voz",
+    "pricing": "pago",
     "occupations": []
   },
   "gladia": {
@@ -445,6 +508,7 @@
     "description": "Transcribe 1 hora de audio en 10 segundos con Gladia Text to Speech.",
     "url": "https://www.gladia.io",
     "category": "voz",
+    "pricing": "gratis",
     "occupations": []
   },
   "uberduck": {
@@ -452,6 +516,7 @@
     "description": "Comunidad de voz de inteligencia artificial de código abierto que te permite generar voces a partir de texto.",
     "url": "https://uberduck.ai",
     "category": "voz",
+    "pricing": "gratis",
     "occupations": []
   },
   "supertone": {
@@ -459,6 +524,7 @@
     "description": "Produzca resultados hiperrealistas utilizando la tecnología de separación de voz de canto y actuación AI.",
     "url": "https://supertone.ai",
     "category": "voz",
+    "pricing": "prueba-gratis",
     "occupations": []
   },
   "murf": {
@@ -466,6 +532,7 @@
     "description": "Pasa de texto a voz con un generador de voz AI versátil.",
     "url": "https://murf.ai",
     "category": "voz",
+    "pricing": "prueba-gratis",
     "occupations": []
   },
   "coqui": {
@@ -473,6 +540,7 @@
     "description": "Voces AI emotivas y generativas directas para videojuegos, postproducción y más.",
     "url": "https://coqui.ai",
     "category": "voz",
+    "pricing": "prueba-gratis",
     "occupations": []
   },
   "azure-speech": {
@@ -480,6 +548,7 @@
     "description": "Dale vida a tus aplicaciones con voces naturales.",
     "url": "https://azure.microsoft.com/en-us/products/cognitive-services/text-to-speech",
     "category": "voz",
+    "pricing": "prueba-gratis",
     "occupations": []
   },
   "wellsaid": {
@@ -487,6 +556,7 @@
     "description": "Crea una narración AI atractiva y realista para todo tu contenido digital",
     "url": "https://wellsaidlabs.com",
     "category": "voz",
+    "pricing": "prueba-gratis",
     "occupations": []
   },
   "voice.ai": {
@@ -494,6 +564,7 @@
     "description": "Voice.ai es un cambiador de voz en tiempo real gratuito para usar durante aplicaciones y juegos.",
     "url": "https://voice.ai",
     "category": "voz",
+    "pricing": "freemium",
     "occupations": []
   },
   "apple-audiobooks": {
@@ -501,6 +572,7 @@
     "description": "Narración digital de libros de audio de Apple Books.",
     "url": "https://authors.apple.com/support/4519-digital-narration-audiobooks",
     "category": "voz",
+    "pricing": "pago",
     "occupations": []
   },
   "play.ht": {
@@ -508,6 +580,7 @@
     "description": "Generador de voz de texto impulsado por IA",
     "url": "https://play.ht",
     "category": "voz",
+    "pricing": "prueba-gratis",
     "occupations": []
   },
   "resemble": {
@@ -515,6 +588,7 @@
     "description": "Genera locuciones similares a las de un ser humano en segundos.",
     "url": "https://www.resemble.ai",
     "category": "voz",
+    "pricing": "prueba-gratis",
     "occupations": []
   },
   "whisper": {
@@ -522,6 +596,7 @@
     "description": "Una red neuronal que se acerca a la robustez y precisión del nivel humano.",
     "url": "https://openai.com/blog/whisper",
     "category": "voz",
+    "pricing": "gratis",
     "occupations": []
   },
   "powermode": {
@@ -529,6 +604,7 @@
     "description": "PowerMode es tu cofundador de IA que te ayudará a idear y presentar tu startup.",
     "url": "https://powermodeai.com",
     "category": "presentaciones",
+    "pricing": "gratis",
     "occupations": []
   },
   "gpt-for-slides": {
@@ -536,6 +612,7 @@
     "description": "Usa IA para generar presentaciones hermosas en segundos de forma gratuita.",
     "url": "https://www.gptforslides.app",
     "category": "presentaciones",
+    "pricing": "gratis",
     "occupations": []
   },
   "slides-ai": {
@@ -543,20 +620,23 @@
     "description": "Crea diapositivas profesionales y atractivas a partir de cualquier texto en poco tiempo.",
     "url": "https://www.slidesai.io",
     "category": "presentaciones",
+    "pricing": "freemium",
     "occupations": []
   },
   "chatbcg": {
-    "name": "ChatBCG",
-    "description": "ChatBCG puede generar diapositivas usando una descripción de texto.",
-    "url": "https://www.chatbcg.com ",
+    "name": "ChatBA",
+    "description": "ChatBA puede generar diapositivas usando una descripción de texto.",
+    "url": "https://www.chatba.com",
     "category": "presentaciones",
+    "pricing": "freemium",
     "occupations": []
   },
   "tome-app": {
     "name": "Tome app",
     "description": "Deja de diseñar diapositivas y comienza a contar historias.",
-    "url": "https://tome.app ",
+    "url": "https://tome.app",
     "category": "presentaciones",
+    "pricing": "freemium",
     "occupations": []
   },
   "yarnit": {
@@ -564,6 +644,7 @@
     "description": "Crea y diseña contenido impresionante y contextual a gran velocidad y escala utilizando inteligencia artificial.",
     "url": "https://www.yarnit.app",
     "category": "generacion-de-contenido",
+    "pricing": "prueba-gratis",
     "occupations": []
   },
   "ocoya": {
@@ -571,6 +652,7 @@
     "description": "Es una plataforma que te permite crear, generar automáticamente y programar contenido más rápido utilizando inteligencia artificial.",
     "url": "https://www.ocoya.com",
     "category": "generacion-de-contenido",
+    "pricing": "prueba-gratis",
     "occupations": []
   },
   "peppertype": {
@@ -578,6 +660,7 @@
     "description": "Es una herramienta de redacción de contenido con inteligencia artificial que crea contenido de alta conversión en segundos.",
     "url": "https://www.peppertype.ai",
     "category": "generacion-de-contenido",
+    "pricing": "freemium",
     "occupations": []
   },
   "adcreative": {
@@ -585,6 +668,7 @@
     "description": "Crea creatividades publicitarias y publicaciones en redes sociales enfocadas en la conversión utilizando inteligencia artificial.",
     "url": "https://www.adcreative.ai",
     "category": "generacion-de-contenido",
+    "pricing": "prueba-gratis",
     "occupations": []
   },
   "chatgpt": {
@@ -592,6 +676,199 @@
     "description": "ChatGPT es un modelo que interactúa de manera conversacional elaborado con inteligencia artificial.",
     "url": "https://openai.com/blog/chatgpt",
     "category": "chatbots",
+    "pricing": "freemium",
+    "occupations": []
+  },
+  "blockade-labs": {
+    "name": "Blockade Labs",
+    "description": "Crea mundos virtuales infinitos con un solo texto en Skybox Lab.",
+    "url": "https://skybox.blockadelabs.com",
+    "category": "desarrollo-de-videojuegos",
+    "pricing": "gratis",
+    "occupations": []
+  },
+  "moonlander": {
+    "name": "Moonlander",
+    "description": "Comienza a construir juegos y mundos 3D de alta calidad en pocos días.",
+    "url": "http://moonlander.ai",
+    "category": "desarrollo-de-videojuegos",
+    "pricing": "prueba-gratis",
+    "occupations": []
+  },
+  "modl": {
+    "name": "Modl",
+    "description": "Agrega bots de IA y ML a tu juego para que jueguen, crezcan y aprendan.",
+    "url": "https://modl.ai",
+    "category": "desarrollo-de-videojuegos",
+    "pricing": "contactar",
+    "occupations": []
+  },
+  "scenario": {
+    "name": "Scenario",
+    "description": "Genera assets de alta calidad y estilo consistente para tus juegos.",
+    "url": "https://www.scenario.gg",
+    "category": "desarrollo-de-videojuegos",
+    "pricing": "contactar",
+    "occupations": []
+  },
+  "terra-video": {
+    "name": "Terra Video",
+    "description": "Terra es una plataforma de ML para reducir la fricción y la complejidad en el proceso de contar historias en video.",
+    "url": "https://www.welcometerra.com",
+    "category": "video",
+    "pricing": "prueba-gratis",
+    "occupations": []
+  },
+  "pictory": {
+    "name": "Pictory",
+    "description": "Crea automáticamente videos de marca cortos y altamente compartibles a partir de tu contenido.",
+    "url": "https://pictory.ai",
+    "category": "video",
+    "pricing": "prueba-gratis",
+    "occupations": []
+  },
+  "maimovie": {
+    "name": "Maimovie",
+    "description": "Descubre películas y programas de TV que se ajusten a tus preferencias sin esfuerzo.",
+    "url": "https://maimovie.com",
+    "category": "video",
+    "pricing": "freemium",
+    "occupations": []
+  },
+  "vizard": {
+    "name": "Vizard",
+    "description": "Convierte videos a clips y shorts listos para ser compartidos en redes sociales.",
+    "url": "https://vizard.ai",
+    "category": "video",
+    "pricing": "gratis",
+    "occupations": []
+  },
+  "dumme": {
+    "name": "Dumme",
+    "description": "Convierte videos a clips y shorts de forma automática.",
+    "url": "https://dumme.com",
+    "category": "video",
+    "occupations": [],
+    "waiting": true
+  },
+  "thumbnail-face": {
+    "name": "Thumbnail Face",
+    "description": "Sube imágenes y obtén las caras de las personas recortadas instantáneamente.",
+    "url": "https://thumbnailface.com",
+    "category": "video",
+    "pricing": "pago",
+    "occupations": []
+  },
+  "morise": {
+    "name": "Morise",
+    "description": "Con Monrise sabrás exactamente lo que necesitas para crear un vídeo viral, así podrás concentrarte en la creación del contenido sin preocuparte por los detalles.",
+    "url": "https://morise.ai",
+    "category": "video",
+    "pricing": "pago",
+    "occupations": []
+  },
+  "dreamix": {
+    "name": "Dreamix",
+    "description": "Dreamix te permite crear o editar un video a partir de texto o imágenes manteniendo el color, la postura, el tamaño del objeto y la posición de la cámara.",
+    "url": "https://dreamix-video-editing.github.io",
+    "category": "video",
+    "pricing": "gratis",
+    "occupations": []
+  },
+  "eightify": {
+    "name": "Eightify",
+    "description": "Extensión de Chrome que permite generar resúmenes de videos de YouTube.",
+    "url": "https://www.eightify.app",
+    "category": "video",
+    "pricing": "freemium",
+    "occupations": []
+  },
+  "poised": {
+    "name": "Poised",
+    "description": "Poised es un entrenador de comunicación impulsado por IA que te ayuda a hablar con confianza y claridad. Es privado y seguro, una herramienta esencial para lugares de trabajo enfocados en lo digital.",
+    "url": "https://www.poised.com",
+    "category": "video",
+    "pricing": "gratis",
+    "occupations": []
+  },
+  "genmo": {
+    "name": "Genmo",
+    "description": "Genera y edita videos a partir de texto con IA.",
+    "url": "https://www.genmo.ai",
+    "category": "video",
+    "pricing": "gratis",
+    "occupations": []
+  },
+  "move": {
+    "name": "Move",
+    "description": "Move permite extrar movimientos de alta fidelidad de cualquier video, cámara HD o dispositivo móvil.",
+    "url": "https://www.move.ai",
+    "category": "video",
+    "pricing": "contactar",
+    "occupations": []
+  },
+  "flawless": {
+    "name": "Flawless",
+    "description": "Dobla videos, películas y series de TV a cualquier idioma mediante el uso de IA.",
+    "url": "https://www.flawlessai.com",
+    "category": "video",
+    "pricing": "contactar",
+    "occupations": []
+  },
+  "movio": {
+    "name": "Movio",
+    "description": "Transforma cualquier texto en un video donde un avatar transmita el mensaje de forma clara y visualmente atractiva.",
+    "url": "https://www.movio.la",
+    "category": "video",
+    "pricing": "freemium",
+    "occupations": []
+  },
+  "fliki": {
+    "name": "Fliki",
+    "description": "Crea videos con voces a partir de guiones o publicaciones de blog de manera rápida y sencilla.",
+    "url": "https://fliki.ai",
+    "category": "video",
+    "pricing": "freemium",
+    "occupations": []
+  },
+  "detail": {
+    "name": "Detail",
+    "description": "Graba, mezcla y comparte videos inspiradores en minutos.",
+    "url": "https://detail.co",
+    "category": "video",
+    "pricing": "gratis",
+    "occupations": []
+  },
+  "synthesia": {
+    "name": "Synthesia",
+    "description": "Crea videos a partir de texto en minutos.",
+    "url": "https://www.synthesia.io",
+    "category": "video",
+    "pricing": "pago",
+    "occupations": []
+  },
+  "creatorml": {
+    "name": "CreatorML",
+    "description": "Clasificador de títulos y miniaturas de video para YouTube.",
+    "url": "https://creatorml.com",
+    "category": "video",
+    "pricing": "prueba-gratis",
+    "occupations": []
+  },
+  "descript": {
+    "name": "Descript",
+    "description": "Editor de video y audio profesional con IA.",
+    "url": "https://www.descript.com",
+    "category": "video",
+    "pricing": "freemium",
+    "occupations": []
+  },
+  "runway": {
+    "name": "RunwayML",
+    "description": "Editor de video profesional con IA. Idea, genera y edita contenido en segundos.",
+    "url": "https://runwayml.com",
+    "category": "video",
+    "pricing": "freemium",
     "occupations": []
   }
 }
