@@ -35,7 +35,9 @@ const CategoryPage = ({ categories, category, tools }: CategoryPageProps) => {
     <>
       <NextSeo
         title={t("seo.title", { name: category.name })}
-        description={t("seo.description", { name: category.name })}
+        description={t("seo.description", {
+          description: category.description,
+        })}
       />
       <LayoutBody>
         <LayoutHeader />
@@ -62,7 +64,9 @@ const CategoryPage = ({ categories, category, tools }: CategoryPageProps) => {
                   {category.name}
                 </Heading>
 
-                <Text fontSize="xl">{category.description}</Text>
+                <Text as="p" fontSize="xl">
+                  {category.description}
+                </Text>
               </Stack>
             </Stack>
 

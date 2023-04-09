@@ -942,5 +942,45 @@
     "category": "excel",
     "pricing": "prueba-gratis",
     "occupations": []
+  },
+  "shortwave": {
+    "name": "Shortwave",
+    "description": "Email más inteligente y rápido diseñado para aumentar la productividad sin estrés.",
+    "url": "https://www.shortwave.com",
+    "category": "email",
+    "pricing": "freemium",
+    "occupations": []
+  },
+  "emailtriager": {
+    "name": "EmailTriager",
+    "description": "Utiliza la IA para redactar automáticamente respuestas de correos electrónicos en segundo plano.",
+    "url": "https://www.emailtriager.com",
+    "category": "email",
+    "waiting": true,
+    "occupations": []
+  },
+  "warmer-ai": {
+    "name": "Warmer AI",
+    "description": "Mejora tus correos electrónicos con personalizaciones únicas generadas por IA.",
+    "url": "https://warmer.ai",
+    "category": "email",
+    "pricing": "prueba-gratis",
+    "occupations": []
+  },
+  "addy-ai": {
+    "name": "Addy AI",
+    "description": "Asistente de correo electrónico que redacta tus correos en segundos, con tu estilo y tono preferidos.",
+    "url": "https://addy-ai.web.app",
+    "category": "email",
+    "pricing": "gratis",
+    "occupations": []
+  },
+  "ellie": {
+    "name": "Ellie",
+    "description": "Ellie aprende de tu estilo de escritura y redacta respuestas como si las hubieras escrito tú mismo",
+    "url": "https://tryellie.com",
+    "category": "email",
+    "pricing": "freemium",
+    "occupations": []
   }
 }
