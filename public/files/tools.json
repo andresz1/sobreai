@@ -982,5 +982,44 @@
     "category": "email",
     "pricing": "freemium",
     "occupations": []
+  },
+  "learn-prompting": {
+    "name": "Learn Prompting",
+    "description": "Curso gratis para aprender a comunicarse de manera efictiva con la inteligencia artificial y sacarle el máximo provecho.",
+    "url": "https://learnprompting.org",
+    "category": "prompts",
+    "occupations": []
+  },
+  "promptbase": {
+    "name": "Promptbase",
+    "description": "Mercado para buscar, comprar y vender prompts de calidad que producen los mejores resultados y te ayudan a ahorrar dinero en costos de API.",
+    "url": "https://promptbase.com",
+    "category": "prompts",
+    "pricing": "freemium",
+    "occupations": []
+  },
+  "promptlayer": {
+    "name": "PromptLayer",
+    "description": "Plataforma que te permite darle seguimiento y encontrar errores en prompts y peticiones a la API de OpenAI.",
+    "url": "https://promptlayer.com",
+    "category": "prompts",
+    "pricing": "gratis",
+    "occupations": []
+  },
+  "prompt-hunt": {
+    "name": "Prompt Hunt",
+    "description": "Buscador de prompts. Te permite buscar, filtrar y copiar prompts para generación de imágenes.",
+    "url": "https://www.prompthunt.com",
+    "category": "prompts",
+    "pricing": "gratis",
+    "occupations": []
+  },
+  "chatgpt-prompts": {
+    "name": "ChatGPT Prompts",
+    "description": "Repositorio con un conjunto de prompts para aprender a usar ChatGPT.",
+    "url": "https://github.com/f/awesome-chatgpt-prompts",
+    "category": "prompts",
+    "pricing": "gratis",
+    "occupations": []
   }
 }

@@ -66,5 +66,9 @@
   "email": {
     "name": "Email",
     "description": "Herramientas de Inteligencia Artificial para escribir más rápido y mejores correos electrónicos."
+  },
+  "prompts": {
+    "name": "Prompts",
+    "description": "Herramientas y buscadores de prompts que te ayudan a aprender y comunicarte mejor con la Inteligencia Artificial."
   }
 }
