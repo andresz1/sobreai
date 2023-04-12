@@ -1050,7 +1050,7 @@
     "name": "Koe Recast",
     "description": "Koe transforma tu voz utilizando inteligencia artificial.",
     "url": "https://koe.ai",
-    "category": "datos",
+    "category": "voz",
     "pricing": "freemium",
     "occupations": []
   },

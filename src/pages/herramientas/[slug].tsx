@@ -34,7 +34,7 @@ const CategoryPage = ({ categories, category, tools }: CategoryPageProps) => {
   return (
     <>
       <NextSeo
-        title={t("seo.title", { name: category.name })}
+        title={t("seo.title", { title: category.title })}
         description={t("seo.description", {
           description: category.description,
         })}

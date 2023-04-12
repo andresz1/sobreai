@@ -1,6 +1,6 @@
 {
   "seo": {
-    "title": "Herramientas IA sobre {{name}}",
+    "title": "{{title}}",
     "description": "{{description}}"
   },
   "breadcrumb": {

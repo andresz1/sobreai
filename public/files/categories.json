@@ -1,78 +1,97 @@
 {
   "chatbots": {
     "name": "Chatbots",
+    "title": "Chatbots",
     "description": "Herramientas de Inteligencia Artificial a las que puedes hacerle preguntas y responden en lenguaje natural."
   },
   "paternidad": {
     "name": "Paternidad",
+    "title": "Herramientas de IA para Paternidad",
     "description": "Herramientas de Inteligencia Artificial que te ayudan a mejorar tu vida como padre y te hacen más productivo."
   },
   "programacion": {
     "name": "Programación",
+    "title": "Herramientas de IA para Programación",
     "description": "Herramientas de Inteligencia Artificial que te ayudan a programar más rápido y tomar mejores decisiones."
   },
   "diseno": {
     "name": "Diseño",
+    "title": "Herramientas de IA para Diseño",
     "description": "Herramientas de Inteligencia Artificial que te ayudan a acelerar tu flujo de trabajo de diseño."
   },
   "reuniones": {
     "name": "Reuniones",
+    "title": "Herramientas de IA para Reuniones",
     "description": "Herramientas de Inteligencia Artificial para automatizar la gestión, resumen y toma de notas de reuniones."
   },
   "generacion-de-imagenes": {
     "name": "Generación de Imágenes",
+    "title": "Herramientas de IA para Generación de Imágenes",
     "description": "Herramientas de Inteligencia Artificial para generar imágenes a partir de texto."
   },
   "escritura": {
     "name": "Escritura",
-    "description": "Herramientas de Inteligencia Artificial para generación de texto."
+    "title": "Herramientas de IA para Escritura",
+    "description": "Herramientas de Inteligencia Artificial para generar, reescribir o manipular texto."
   },
   "audio": {
     "name": "Audio",
-    "description": "Herramientas de Inteligencia Artificial para generar o manipular audio."
+    "title": "Herramientas de IA para Audio",
+    "description": "Herramientas de Inteligencia Artificial para generar, editar o manipular audio."
   },
   "fotos-de-perfil": {
     "name": "Fotos de Perfil",
+    "title": "Herramientas de IA para Fotos de Perfil y Avatares",
     "description": "Herramientas de Inteligencia Artificial para generar avatares, fotos profesionales o mejorar fotos de perfil."
   },
   "3d": {
     "name": "3D",
+    "title": "Herramientas de IA para 3D",
     "description": "Herramientas de Inteligencia Artificial para generar o manipular objetos 3D."
   },
   "voz": {
     "name": "Voz",
+    "title": "Herramientas de IA para Voz",
     "description": "Herramientas de Inteligencia Artificial para generar o manipular voces."
   },
   "presentaciones": {
     "name": "Presentaciones",
+    "title": "Herramientas de IA para Presentaciones",
     "description": "Herramientas de Inteligencia Artificial para generar o editar presentaciones y diapositivas."
   },
   "generacion-de-contenido": {
-    "name": "Generación de contenido",
+    "name": "Generación de Contenido",
+    "title": "Herramientas de IA para Generación de Contenido",
     "description": "Herramientas de Inteligencia Artificial para generar y crear contenido."
   },
   "desarrollo-de-videojuegos": {
-    "name": "Desarrollo de videojuegos",
+    "name": "Desarrollo de Videojuegos",
+    "title": "Herramientas de IA para Desarrollo de Videojuegos",
     "description": "Herramientas de Inteligencia Artificial para acelerar el flujo de trabajo y optimizar la productividad del desarrollo de videojuegos."
   },
   "video": {
     "name": "Video",
+    "title": "Herramientas de IA para Video",
     "description": "Herramientas de Inteligencia Artificial para generar o editar videos."
   },
   "excel": {
     "name": "Excel",
+    "title": "Herramientas de IA para Excel",
     "description": "Herramientas de Inteligencia Artificial para optimizar tu trabajo en hojas de cálculo y crear fórmulas de Excel de forma efectiva."
   },
   "email": {
     "name": "Email",
+    "title": "Herramientas de IA para Email",
     "description": "Herramientas de Inteligencia Artificial para escribir más rápido y mejores correos electrónicos."
   },
   "prompts": {
     "name": "Prompts",
+    "title": "Herramientas, buscadores y recursos sobre Prompts",
     "description": "Herramientas y buscadores de prompts que te ayudan a aprender y comunicarte mejor con la Inteligencia Artificial."
   },
   "datos": {
     "name": "Datos",
+    "title": "Herramientas de IA para grandes cantidades de Datos",
     "description": "Herramientas de Inteligencia Artificial para leer y manipular grandes cantidades de datos."
   }
 }
