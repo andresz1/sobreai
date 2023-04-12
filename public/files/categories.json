@@ -70,5 +70,9 @@
   "prompts": {
     "name": "Prompts",
     "description": "Herramientas y buscadores de prompts que te ayudan a aprender y comunicarte mejor con la Inteligencia Artificial."
+  },
+  "datos": {
+    "name": "Datos",
+    "description": "Herramientas de Inteligencia Artificial para leer y manipular grandes cantidades de datos."
   }
 }

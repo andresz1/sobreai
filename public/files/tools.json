@@ -1021,5 +1021,45 @@
     "category": "prompts",
     "pricing": "gratis",
     "occupations": []
+  },
+  "quillbot": {
+    "name": "Quillbot",
+    "description": "Quillbot te ayuda a reescribir, corregir errores gramaticales, parafrasear y cambiar el tono de cualquier texto.",
+    "url": "https://quillbot.com",
+    "category": "escritura",
+    "pricing": "gratis",
+    "occupations": []
+  },
+  "wiseone": {
+    "name": "Wiseone",
+    "description": "Wiseone es una extensión de chrome que ofrece una nueva forma leer y explorar contenido. Resume información compleja y resalta las ideas más importantes.",
+    "url": "https://wiseone.io",
+    "category": "escritura",
+    "pricing": "gratis",
+    "occupations": []
+  },
+  "rose-ai": {
+    "name": "Rose AI",
+    "description": "Rose es una plataforma de datos en la nube que ayuda a sus usuarios a encontrar, interactuar, visualizar y compartir datos.",
+    "url": "https://rose.ai",
+    "category": "datos",
+    "pricing": "contactar",
+    "occupations": []
+  },
+  "koe": {
+    "name": "Koe Recast",
+    "description": "Koe transforma tu voz utilizando inteligencia artificial.",
+    "url": "https://koe.ai",
+    "category": "datos",
+    "pricing": "freemium",
+    "occupations": []
+  },
+  "pullpo": {
+    "name": "Pullpo",
+    "description": "Code reviews y resumen de pull request automáticas. Además Pullpo también ofrece un sistema para tener las conversaciones de code reviews centralizadas en canales de slack.",
+    "url": "https://pullpo.io",
+    "category": "programacion",
+    "pricing": "prueba-gratis",
+    "occupations": []
   }
 }
