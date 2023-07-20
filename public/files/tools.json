@@ -1098,16 +1098,32 @@
     "name": "DecorAI",
     "description": "DecorAI automatiza el diseño de interiores, brindándote ideas de diseño personalizadas de manera rápida y asequible.",
     "url": "https://decorai.io",
-    "category": "diseno-de-interior",
+    "category": "diseno-interior",
     "pricing": "freemium",
     "occupations": []
   },
   "roomgpt": {
     "name": "roomGPT",
     "description": "RoomGPT permite a los usuarios tomar una foto de su habitación y generar una nueva versión en diferentes temas. Es una herramienta ideal para reformas, ya que te da una idea de cómo sería el resultado final.",
-    "url": "https://www.roomgpt.io/",
-    "category": "diseno-de-interior",
+    "url": "https://www.roomgpt.io",
+    "category": "diseno-interior",
     "pricing": "gratis",
+    "occupations": []
+  },
+  "kaiber-ai": {
+    "name": "Kaiber",
+    "description": "Kaiber es un potente motor de generación de videos que permite a los usuarios crear videos a partir de sus propias imágenes o descripciones de texto. Con características exclusivas como Spotify Canvas para músicos, inspiración para artistas, contenido para creadores y diversión para futuristas, Kaiber ofrece una experiencia única para expresarse y aprovechar al máximo las herramientas de IA.",
+    "url": "https://kaiber.ai",
+    "category": "video",
+    "pricing": "freemium",
+    "occupations": []
+  },
+  "copymate": {
+    "name": "Copymate",
+    "description": "Copymate es un generador de contenido SEO impulsado por inteligencia artificial que ayuda a los usuarios a crear docenas de artículos de alta calidad, a largo plazo y optimizados para SEO en cuestión de minutos. Cuenta con un Generador Masivo, Integración con WordPress, GPT-4, Gestión Multisitio y Optimización SEO. Además, permite a los usuarios ahorrar tiempo, dinero e incrementar su productividad al crear contenido en cualquier idioma sin necesidad de tener conocimientos sobre él..",
+    "url": "https://copymate.app",
+    "category": "generacion-de-contenido",
+    "pricing": "freemium",
     "occupations": []
   }
 }

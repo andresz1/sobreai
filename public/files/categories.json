@@ -94,9 +94,9 @@
     "title": "Herramientas de IA para grandes cantidades de Datos",
     "description": "Herramientas de Inteligencia Artificial para leer y manipular grandes cantidades de datos."
   },
-  "diseno-de-interior": {
-    "name": "Diseño de Interior",
-    "title": "Herramientas de IA para Diseño de Interior",
-    "description": "Herramientas de Inteligencia Artificial para hacer y automatizar el Diseño de Interior."
+  "diseno-interior": {
+    "name": "Diseño Interior",
+    "title": "Herramientas de IA para Diseño Interior",
+    "description": "Herramientas de Inteligencia Artificial para hacer y automatizar el Diseño Interior."
   }
 }
