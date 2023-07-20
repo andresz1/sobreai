@@ -77,8 +77,8 @@ const CategoryPage = ({ categories, category, tools }: CategoryPageProps) => {
               }}
               gap={6}
             >
-              {tools.map((tool) => (
-                <ToolCard key={tool.slug} tool={tool} />
+              {tools.map((tool, index) => (
+                <ToolCard key={tool.slug} tool={tool} isLCP={index === 0} />
               ))}
             </SimpleGrid>
 

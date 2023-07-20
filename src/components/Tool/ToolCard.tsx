@@ -19,9 +19,10 @@ import { Tool } from "@/types/Tool";
 
 export interface ToolCardProps extends LinkBoxProps {
   tool: Tool;
+  isLCP?: boolean;
 }
 
-export const ToolCard = ({ tool, ...others }: ToolCardProps) => {
+export const ToolCard = ({ tool, isLCP, ...others }: ToolCardProps) => {
   const { t } = useTranslation("tool");
 
   return (
@@ -41,6 +42,7 @@ export const ToolCard = ({ tool, ...others }: ToolCardProps) => {
           <Image
             src={tool.thumbnail}
             alt={t("card.image", { name: tool.name })}
+            priority={isLCP}
             objectFit="contain"
             fill
           />
