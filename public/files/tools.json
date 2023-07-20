@@ -1090,8 +1090,8 @@
     "name": "Pullpo",
     "description": "Leonardo.ai ayuda a los creativos a generar rápidamente modelos 3D y assets listos para producción con velocidad impulsada por inteligencia artificial y consistencia de estilo.",
     "url": "https://leonardo.ai",
-    "category": "programacion",
-    "pricing": "prueba-gratis",
+    "category": "3d",
+    "pricing": "freemium",
     "occupations": []
   }
 }
