@@ -1,6 +1,7 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import { AppProps } from "next/app";
 import { useRouter } from "next/router";
+import Script from "next/script";
 import { appWithTranslation } from "next-i18next";
 import { DefaultSeo } from "next-seo";
 import { GoogleAnalytics } from "nextjs-google-analytics";
@@ -17,7 +18,14 @@ function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
+      <Script
+        strategy="afterInteractive"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5481520477542342"
+        crossOrigin="anonymous"
+      />
+
       <GoogleAnalytics trackPageViews />
+
       <ChakraProvider theme={theme}>
         <LayoutNProgressBar />
         <DefaultSeo
