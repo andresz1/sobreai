@@ -1061,5 +1061,37 @@
     "category": "programacion",
     "pricing": "prueba-gratis",
     "occupations": []
+  },
+  "logoai": {
+    "name": "logoai",
+    "description": "Deja que nuestro creador de logotipos impulsado por inteligencia artificial genere tu nuevo logo, cree papelería a juego y diseñe una marca que te encante.",
+    "url": "https://www.logoai.com",
+    "category": "diseno",
+    "pricing": "freemium",
+    "occupations": []
+  },
+  "iconikai": {
+    "name": "Iconik AI",
+    "description": "Iconik AI es un generador de iconos impulsado por inteligencia artificial que permite a desarrolladores y diseñadores crear rápidamente iconos de aplicaciones impresionantes, personalizando el estilo y los colores para que coincidan con su marca.",
+    "url": "https://www.iconikai.com",
+    "category": "diseno",
+    "pricing": "pago",
+    "occupations": []
+  },
+  "onlycoms": {
+    "name": "Onlycoms",
+    "description": "Onlycoms te ayuda a encontrar rápidamente el dominio .com perfecto para tu proyecto con su algoritmo personalizado y una interfaz fácil de usar.",
+    "url": "https://onlycoms.com",
+    "category": "programacion",
+    "pricing": "free",
+    "occupations": []
+  },
+  "leonardoai": {
+    "name": "Pullpo",
+    "description": "Leonardo.ai ayuda a los creativos a generar rápidamente modelos 3D y assets listos para producción con velocidad impulsada por inteligencia artificial y consistencia de estilo.",
+    "url": "https://leonardo.ai",
+    "category": "programacion",
+    "pricing": "prueba-gratis",
+    "occupations": []
   }
 }
