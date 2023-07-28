@@ -98,5 +98,10 @@
     "name": "Diseño Interior",
     "title": "Herramientas de IA para Diseño Interior",
     "description": "Herramientas de Inteligencia Artificial para hacer y automatizar el Diseño Interior."
+  },
+  "musica": {
+    "name": "Música",
+    "title": "Herramientas de IA para Música",
+    "description": "Herramientas de Inteligencia Artificial para generar o editar música y canciones."
   }
 }

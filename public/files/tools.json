@@ -1125,5 +1125,29 @@
     "category": "generacion-de-contenido",
     "pricing": "freemium",
     "occupations": []
+  },
+  "shuffll": {
+    "name": "Shuffll",
+    "description": "Plataforma de producción de video impulsada por inteligencia artificial para la creación rápida de contenido personalizado.",
+    "url": "https://shuffll.com",
+    "category": "video",
+    "pricing": "pago",
+    "occupations": []
+  },
+  "namelix": {
+    "name": "Namelix",
+    "description": "Genera nombres de negocios cortos y memorables, así como nombres de dominio.",
+    "url": "https://namelix.com",
+    "category": "generacion-de-contenido",
+    "pricing": "gratis",
+    "occupations": []
+  },
+  "riffusion": {
+    "name": "Riffusion",
+    "description": "Crear música a partir de texto con estilos, instrumentos, modificadores y géneros.",
+    "url": "https://www.riffusion.com",
+    "category": "musica",
+    "pricing": "gratis",
+    "occupations": []
   }
 }
