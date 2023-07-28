@@ -52,19 +52,26 @@ const getCategoriesSearchObjects = () => {
 };
 
 const execute = async () => {
-  dotenv.config({ path: `.env.local` });
+  try {
+    dotenv.config({ path: `.env.local` });
 
-  const client = algoliasearch(
-    process.env.NEXT_PUBLIC_ALGOLIA_APP_ID,
-    process.env.ALGOLIA_SEARCH_ADMIN_KEY
-  );
+    const client = algoliasearch(
+      process.env.NEXT_PUBLIC_ALGOLIA_APP_ID,
+      process.env.ALGOLIA_SEARCH_ADMIN_KEY
+    );
 
-  const posts = getPostsSearchObjects();
-  const categories = getCategoriesSearchObjects();
+    const posts = getPostsSearchObjects();
+    const categories = getCategoriesSearchObjects();
 
-  const index = client.initIndex("sobreia.com");
+    const index = client.initIndex("sobreia.com");
 
-  await Promise.all([index.saveObjects(posts), index.saveObjects(categories)]);
+    await Promise.all([
+      index.saveObjects(posts),
+      index.saveObjects(categories),
+    ]);
+  } catch (error) {
+    console.error(error);
+  }
 };
 
 execute();
