@@ -59,7 +59,7 @@ const IndexPage = ({ categories, tools }: IndexPage) => {
                 variant="outline"
                 size="lg"
                 as="a"
-                href="https://discord.gg/fMWVJVcW"
+                href="https://discord.gg/MqJk8GhYfM"
                 rel="noopener noreferrer nofollow"
                 target="_blank"
                 leftIcon={<RxDiscordLogo />}

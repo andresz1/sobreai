@@ -48,7 +48,7 @@ export const LayoutFooter = () => {
           <IconButton
             as="a"
             variant="outline"
-            href="https://discord.gg/fMWVJVcW"
+            href="https://discord.gg/MqJk8GhYfM"
             rel="noopener noreferrer nofollow"
             target="_blank"
             aria-label="Discord"

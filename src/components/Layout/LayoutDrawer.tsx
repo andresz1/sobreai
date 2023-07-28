@@ -66,7 +66,7 @@ export const LayoutDrawer = ({ onClose, ...others }: LayoutDrawerProps) => {
 
           <LayoutDrawerItem
             as="a"
-            href="https://discord.gg/fMWVJVcW"
+            href="https://discord.gg/MqJk8GhYfM"
             rel="noopener noreferrer nofollow"
             target="_blank"
             icon={<RxDiscordLogo />}
