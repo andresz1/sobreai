@@ -1149,5 +1149,37 @@
     "category": "musica",
     "pricing": "gratis",
     "occupations": []
+  },
+  "looka": {
+    "name": "Looka",
+    "description": "Crea logotipos personalizados con inteligencia artificial (IA).",
+    "url": "https://looka.com",
+    "category": "diseno",
+    "pricing": "freemium",
+    "occupations": []
+  },
+  "writesonic": {
+    "name": "Writesonic",
+    "description": "Crea contenido amigable para SEO con IA para blogs, sitios web y artículos.",
+    "url": "https://writesonic.com",
+    "category": "escritura",
+    "pricing": "freemium",
+    "occupations": []
+  },
+  "reimagine-home": {
+    "name": "REimagine Home",
+    "description": "Rediseña cualquier espacio para que coincida con tu visión, o permite que nuestra inteligencia artificial te muestre inspiradores diseños en cuestión de segundos.",
+    "url": "https://www.reimaginehome.ai",
+    "category": "diseno-interior",
+    "pricing": "freemium",
+    "occupations": []
+  },
+  "copy-ai": {
+    "name": "Copy.ai",
+    "description": "Copywriter impulsado por inteligencia artificial para marketing: ¡comienza gratis, sin necesidad de tarjeta de crédito.",
+    "url": "https://www.copy.ai",
+    "category": "generacion-de-contenido",
+    "pricing": "freemium",
+    "occupations": []
   }
 }
