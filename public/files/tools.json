@@ -1181,5 +1181,13 @@
     "category": "generacion-de-contenido",
     "pricing": "freemium",
     "occupations": []
+  },
+  "introgenai": {
+    "name": "introgenai",
+    "description": "Simplemente ingresa la URL de tu perfil de LinkedIn a continuación y crearemos una introducción profesional para tu perfil de LinkedIn. Destaca con un resumen personalizado y bien elaborado en tan solo un clic.",
+    "url": "https://www.introgenai.com",
+    "category": "generacion-de-contenido",
+    "pricing": "gratis",
+    "occupations": []
   }
 }
