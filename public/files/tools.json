@@ -1205,5 +1205,13 @@
     "category": "musica",
     "pricing": "freemium",
     "occupations": []
+  },
+  "characterai": {
+    "name": "Suno",
+    "description": "Conoce Inteligencia artificiales que se sienten vivas. Chatea con cualquiera, en cualquier lugar, en cualquier momento. Experimenta el poder de los chatbots súper inteligentes que te escuchan, te entienden y te recuerdan.",
+    "url": "https://character.ai/",
+    "category": "chatbots",
+    "pricing": "freemium",
+    "occupations": []
   }
 }
