@@ -1189,5 +1189,21 @@
     "category": "generacion-de-contenido",
     "pricing": "gratis",
     "occupations": []
+  },
+  "nexusclips": {
+    "name": "nexusclips",
+    "description": "Inteligencia artificial que convierte tu contenido en clips llamativos, animados y optimizados para ser virales. Edita, subtitula y publica tus clips.",
+    "url": "https://nexusclips.com",
+    "category": "generacion-de-contenido",
+    "pricing": "freemium",
+    "occupations": []
+  },
+  "suno": {
+    "name": "Suno",
+    "description": "Inteligencia artificial para crear música que combina voces e instrumentación de manera realista. Suno te permite crear todo tipo de canciones con tan solo un prompt.",
+    "url": "https://suno.com",
+    "category": "musica",
+    "pricing": "freemium",
+    "occupations": []
   }
 }
