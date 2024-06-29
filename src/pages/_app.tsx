@@ -33,7 +33,7 @@ function App({ Component, pageProps }: AppProps) {
             type: "website",
             locale: "es",
             url: canonical,
-            images: [{ url: "/og-logo.png" }],
+            images: [{ url: `${url}/og-logo.png` }],
             siteName,
           }}
           canonical={canonical}
