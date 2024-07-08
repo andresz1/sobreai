@@ -1,6 +1,6 @@
 import { Stack, Text } from "@chakra-ui/layout";
-import { IconButton } from "@chakra-ui/react";
-import { useTranslation } from "next-i18next";
+import { Button, IconButton } from "@chakra-ui/react";
+import { Trans, useTranslation } from "next-i18next";
 import { FiGithub, FiTwitter } from "react-icons/fi";
 import { RxDiscordLogo } from "react-icons/rx";
 
@@ -21,7 +21,20 @@ export const LayoutFooter = () => {
         spacing={6}
       >
         <Text fontSize="md" textAlign="center">
-          {t("footer.copyright")}
+          <Trans
+            t={t}
+            i18nKey="footer.copyright"
+            components={{
+              Link: (
+                <Button
+                  as="a"
+                  href="https://andresas.dev"
+                  target="_blank"
+                  variant="link"
+                />
+              ),
+            }}
+          />
         </Text>
 
         <Stack direction="row" spacing={4}>
