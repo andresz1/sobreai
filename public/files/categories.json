@@ -103,5 +103,10 @@
     "name": "Música",
     "title": "Herramientas de IA para Música",
     "description": "Herramientas de Inteligencia Artificial para generar o editar música y canciones."
+  },
+  "viajes": {
+    "name": "Viájes",
+    "title": "Herramientas de IA para Viajes y Turismo",
+    "description": "Herramientas de Inteligencia Artificial para usar de viaje y para hacer turismo."
   }
 }

@@ -1213,5 +1213,13 @@
     "category": "chatbots",
     "pricing": "freemium",
     "occupations": []
+  },
+  "freetour-ai": {
+    "name": "Freetour AI",
+    "description": "Descubre el mundo sin esfuerzo. Tu guía turístico impulsado por IA para experiencias de viaje personalizadas te espera.",
+    "url": "https://www.freetourai.com",
+    "category": "viajes",
+    "pricing": "freemium",
+    "occupations": []
   }
 }
