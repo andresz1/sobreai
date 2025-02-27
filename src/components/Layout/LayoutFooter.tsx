@@ -34,6 +34,20 @@ export const LayoutFooter = () => {
                 />
               ),
             }}
+          />{" "}
+          <Trans
+            t={t}
+            i18nKey="footer.freetourai"
+            components={{
+              Link: (
+                <Button
+                  as="a"
+                  href="https://www.freetourai.com"
+                  target="_blank"
+                  variant="link"
+                />
+              ),
+            }}
           />
         </Text>
 
