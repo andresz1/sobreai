@@ -37,12 +37,20 @@ export const LayoutFooter = () => {
           />{" "}
           <Trans
             t={t}
-            i18nKey="footer.freetourai"
+            i18nKey="footer.sponsor"
             components={{
-              Link: (
+              Link1: (
                 <Button
                   as="a"
                   href="https://www.freetourai.com"
+                  target="_blank"
+                  variant="link"
+                />
+              ),
+              Link2: (
+                <Button
+                  as="a"
+                  href="https://www.nouroomai.com"
                   target="_blank"
                   variant="link"
                 />
