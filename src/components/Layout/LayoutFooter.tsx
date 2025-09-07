@@ -21,20 +21,7 @@ export const LayoutFooter = () => {
         spacing={6}
       >
         <Text fontSize="md" textAlign="center">
-          <Trans
-            t={t}
-            i18nKey="footer.copyright"
-            components={{
-              Link: (
-                <Button
-                  as="a"
-                  href="https://andresas.dev"
-                  target="_blank"
-                  variant="link"
-                />
-              ),
-            }}
-          />{" "}
+          <Trans t={t} i18nKey="footer.copyright" />{" "}
           <Trans
             t={t}
             i18nKey="footer.sponsor"

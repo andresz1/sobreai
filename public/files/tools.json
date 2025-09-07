@@ -1198,6 +1198,14 @@
     "pricing": "freemium",
     "occupations": []
   },
+  "freetour-ai": {
+    "name": "Freetour AI",
+    "description": "Descubre el mundo sin esfuerzo. Tu guía turístico impulsado por IA para experiencias de viaje personalizadas te espera.",
+    "url": "https://www.freetourai.com",
+    "category": "viajes",
+    "pricing": "freemium",
+    "occupations": []
+  },
   "suno": {
     "name": "Suno",
     "description": "Inteligencia artificial para crear música que combina voces e instrumentación de manera realista. Suno te permite crear todo tipo de canciones con tan solo un prompt.",
@@ -1211,14 +1219,6 @@
     "description": "Conoce Inteligencia artificiales que se sienten vivas. Chatea con cualquiera, en cualquier lugar, en cualquier momento. Experimenta el poder de los chatbots súper inteligentes que te escuchan, te entienden y te recuerdan.",
     "url": "https://character.ai/",
     "category": "chatbots",
-    "pricing": "freemium",
-    "occupations": []
-  },
-  "freetour-ai": {
-    "name": "Freetour AI",
-    "description": "Descubre el mundo sin esfuerzo. Tu guía turístico impulsado por IA para experiencias de viaje personalizadas te espera.",
-    "url": "https://www.freetourai.com",
-    "category": "viajes",
     "pricing": "freemium",
     "occupations": []
   },
