@@ -3,7 +3,7 @@
   "scripts": {
     "capture": "node node_modules/puppeteer/install.js && node ./scripts/capture.mjs",
     "search": "node ./scripts/search.mjs",
-    "postinstall": "npm run capture && npm run search",
+    "postinstall": "npm run search",
     "dev": "next",
     "build": "next build",
     "start": "next start",
