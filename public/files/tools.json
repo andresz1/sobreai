@@ -1222,10 +1222,10 @@
     "pricing": "freemium",
     "occupations": []
   },
-  "nouroom-ai": {
-    "name": "Nouroom AI",
-    "description": "Home staging virtual, vídeos inmobiliarios y reformas online con IA.",
-    "url": "https://www.nouroomai.com",
+  "inmoedit": {
+    "name": "Inmoedit",
+    "description": "Home staging virtual, vídeos inmobiliarios y tours 360 con IA.",
+    "url": "https://www.inmoedit.com",
     "category": "diseno-interior",
     "pricing": "freemium",
     "occupations": []

@@ -37,7 +37,7 @@ export const LayoutFooter = () => {
               Link2: (
                 <Button
                   as="a"
-                  href="https://www.nouroomai.com"
+                  href="https://www.inmoedit.com"
                   target="_blank"
                   variant="link"
                 />
